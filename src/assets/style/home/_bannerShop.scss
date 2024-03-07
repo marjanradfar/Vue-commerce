@@ -1,0 +1,57 @@
+//todo: bannerShop one home page
+
+.bannerShop {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  gap: 2%;
+  @include break(768) {
+    grid-template-columns:100%;
+    align-content: center;
+  }
+
+  &__item {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+
+    &--text {
+      width: 100%;
+      padding-right: 10%;
+      padding-top: 6%;
+      position: absolute;
+
+
+      p {
+        margin-bottom: 0.75rem;
+        font-weight: 600;
+      }
+
+
+    }
+
+    &--img {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .itemFlex {
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    justify-content: space-between;
+    @include break(768) {
+      gap: 2rem;
+
+    }
+
+    .bannerShop__item {
+
+      .bannerShop__item--text {
+        bottom: 14%;
+        padding-right: 60%;
+      }
+    }
+  }
+}

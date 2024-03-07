@@ -1,0 +1,83 @@
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+
+}
+
+body, html {
+  direction: rtl;
+  font-family: "SpaceGrotesk";
+  font-family: "Pinar";
+  background-color: $backgroundWhite;
+
+}
+
+body {
+  position: relative;
+  font-size: 18px;
+  @include break(1880) {
+    font-size: 16px;
+  }
+  @include break(1550) {
+    font-size: 12px;
+  }
+  @include break(1200) {
+    font-size: 10px;
+  }
+  @include break(580) {
+    font-size: 8px;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: $mainTextColor;
+  font-family: "Pinar";
+
+}
+
+.container {
+  margin: 0 8%;
+  @include break(768) {
+    //margin: 0 4rem;
+
+  }
+}
+
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+
+
+  &__item {
+    font-size: 16px;
+    @include break(991) {
+      font-size: 12px;
+
+    }
+
+
+    a {
+      font-size: 1em;
+      color: $secondaryTextColor;
+      font-weight: 600;
+
+      &:hover {
+        color: $mainTextColor;
+      }
+    }
+  }
+
+  .active {
+    color: $mainTextColor;
+  }
+}

@@ -1,9 +1,10 @@
 <script setup>
-
+import './page/Home.vue'
+import Home from "@/page/Home.vue";
 </script>
 
 <template>
-  <h1>fffff</h1>
+  <Home/>
 </template>
 
 

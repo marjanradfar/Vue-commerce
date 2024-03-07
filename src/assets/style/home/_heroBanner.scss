@@ -1,0 +1,63 @@
+//todo:swiper top home page
+.heroBanner {
+  font-family: "Pinar";
+
+  &__content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+    @include break(768) {
+      grid-template-columns: 100%;
+      margin-top: 4rem;
+      margin-bottom: 5rem;
+    }
+
+
+    &--title {
+      @include break(768) {
+        text-align: center;
+        margin-bottom: 1.2rem;
+      }
+      @include break(480) {
+        text-align: right;
+      }
+    }
+
+    &--info {
+      //font-size: 1.5em;
+      line-height: normal;
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include break(768){
+        text-align: center;
+      }
+      @include break(480) {
+        text-align: right;
+        display: none;
+      }
+
+    }
+
+    .mobile {
+      display: none;
+      font-family: "SpaceGrotesk";
+
+      @include break(480) {
+        display: block;
+        font-size: 1.5em;
+        span {
+          color: $secondaryTextColor;
+          font-family: "Pinar";
+
+        }
+
+      }
+    }
+
+
+  }
+
+}

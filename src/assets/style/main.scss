@@ -1,2 +1,18 @@
-@import './base/base';
+@import "base/variable";
+@import "base/responsive";
+@import "base/global";
+@import "base/font";
+@import "base/typography";
+
+//todo: styles in home page
+@import "home/home";
+@import "home/swiperHero";
+@import "./home/heroBanner";
+@import "./home/bannerShop";
+@import "./home/newArrivals";
+@import "home/header";
+
+//todo: Commonly used styles
+@import "components/goShop";
+@import "components/button";
 

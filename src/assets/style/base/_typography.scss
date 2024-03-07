@@ -1,0 +1,73 @@
+//The largest text according to Figma 80px
+.extraLargeText {
+
+}
+
+//According to Figma 72px
+.largeText {
+  //font-size: 6em;
+  font-size: 4em;
+  line-height:7vw;
+  @include break(991) {
+    font-size: 3em;
+  }
+  @include break(768) {
+    font-size: 4em;
+    line-height:9vw;
+
+  }
+  @include break(480) {
+    font-size: 3.5em;
+  }
+
+
+}
+
+//According to Figma 54px
+.largeLightText{
+
+}
+
+//According to Figma 40px
+.extraMediumText{
+  font-size: 3.125em;
+  @include break(768) {
+    font-size: 4.5em;
+  }
+  @include break(480) {
+    font-size: 3em;
+  }
+}
+
+//According to Figma 34px
+
+.mediumText{
+
+}
+//According to Figma 20px
+.mediumLightText{
+  font-size: 1.6em;
+}
+
+//According to Figma 18px
+.extraSmallText{
+  font-size: 1.125em;
+
+}
+
+//According to Figma 16px
+.smallText{
+  font-size: 1em;
+
+}
+
+//According to Figma 14px
+.smallLightText{
+  font-size: 0.8em;
+
+}
+
+
+
+
+

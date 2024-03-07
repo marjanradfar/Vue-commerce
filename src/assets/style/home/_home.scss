@@ -1,0 +1,427 @@
+//todo:Call to action - advertising banner above the header
+.navOff {
+  height: 2.5rem;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include break(480) {
+    .goShop {
+      display: none;
+    }
+  }
+  @include break(480) {
+    font-size: 12px;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 6%;
+    }
+
+    span {
+      padding: 0 0.75rem;
+    }
+  }
+
+}
+
+
+//todo:section support
+.support {
+  //margin: 3rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2%;
+  padding: 3rem 0;
+  @include break(768) {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  @include break(480) {
+    gap: 1rem;
+  }
+
+  &__item {
+    background-color: $backgroundItem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 14% 10%;
+
+    &--icon {
+      //width: 60px;
+      width: 30%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &--text {
+
+
+      span {
+        color: $secondaryTextColor;
+      }
+
+      h2 {
+        margin-bottom: 0.625rem;
+
+      }
+    }
+
+
+  }
+}
+
+//todo:bannerOff
+.bannerOff {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  @include break(768) {
+    grid-template-columns: 100%;
+  }
+
+  &__img {
+    width: 100%;
+
+    img {
+      width: 100%;
+
+    }
+  }
+
+  &__content {
+    background-color: $backgroundItem;
+    padding-right: 8%;
+    //padding-left: 8%;
+    padding-top: 12%;
+
+    @include break(768) {
+      margin-top: -5px;
+      //padding: 3.656rem 0 3.656rem 8%;
+      padding: 3.656rem 8% 3.656rem 0;
+    }
+
+
+    span {
+      color: $offTextColor;
+    }
+
+    h1 {
+      //margin: 1rem 0;
+    }
+
+    p {
+      margin-bottom: 1.25rem;
+    }
+  }
+}
+
+//todo:section Articles
+
+.articles {
+
+  margin-top: 5%;
+  margin-bottom: 5%;
+  @include break(768) {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2%;
+
+    .extraMediumText {
+      line-height: 60px;
+    }
+
+    @include break(768) {
+      margin-bottom: 5%;
+
+    }
+
+    span {
+      font-weight: 500;
+    }
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    justify-content: space-between;
+    @include break(768) {
+      grid-template-columns: 100%;
+      gap: 54px;
+    }
+
+    &--box {
+      .boxImg {
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .boxText {
+
+
+      p {
+        margin-top: 2%;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+      }
+
+      .goShop {
+        span {
+          font-weight: 600;
+          color: $mainTextColor;
+        }
+
+      }
+    }
+  }
+}
+
+//todo:  section newsletter
+.newsletter {
+  width: 100%;
+  position: relative;
+  top: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F2F4F6;
+  @include break(480) {
+    padding: 3rem 0;
+  }
+
+  .back {
+    @include break(480) {
+      display: none;
+    }
+  }
+
+  img {
+    width: 100%;
+
+  }
+
+  &__content {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @include break(480) {
+      position: relative;
+    }
+
+    &--title {
+      width: 100%;
+      text-align: center;
+
+      p {
+        font-weight: 500;
+      }
+
+      .extraMediumText {
+        @include break(768) {
+          font-size: 3.125em;
+        }
+      }
+    }
+
+    &--input {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      margin-top: 8%;
+      width: 100%;
+      border-bottom: 1px solid $secondaryTextColor;
+      padding-bottom: 2%;
+
+
+      .email {
+        position: relative;
+        width: 100%;
+
+        img {
+          position: absolute;
+          //margin-top: 2%;
+          width: 8%;
+        }
+
+        input {
+          width: 100%;
+          border: none;
+          background-color: transparent;
+          font-size: 1em;
+          //padding: 4% 10% 4% 10%;
+          padding-right: 12%;
+
+          font-family: "pinar";
+
+          &::placeholder {
+            display: flex;
+            align-items: center;
+            color: $secondaryTextColor;
+            font-family: "pinar";
+          }
+
+
+        }
+      }
+
+      .singUp {
+        width: 14%;
+        color: $secondaryTextColor;
+      }
+    }
+  }
+}
+
+//todo: footer
+
+.footer {
+  width: 100%;
+  background-color: $mainTextColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 16px;
+  padding-top: 80px;
+  padding-bottom: 32px;
+
+  > * {
+    margin: 0 8%;
+
+  }
+
+  @include break(991) {
+    font-size: 12px;
+  }
+  @include break(768) {
+    font-size: 10px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 49px;
+    @include break(768) {
+      flex-direction: column;
+    }
+
+    &--logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      color: $ThirdTextColor;
+      @include break(768) {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding-bottom: 40px;
+      }
+      .logo{
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .space {
+      color: $secondaryTextColor;
+      @include break(768) {
+        display: none
+      }
+    }
+
+    &--listMenu {
+      .menu {
+        @include break(768) {
+          flex-direction: column;
+          gap: 1.5rem;
+        }
+
+        &__item {
+          a {
+            color: $ThirdTextColor;
+          }
+        }
+      }
+
+
+    }
+  }
+
+  &__copyRight {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    @include break(768) {
+      flex-direction: column-reverse !important;
+    }
+
+    &--text {
+      display: flex;
+      align-items: center;
+      gap: 1.75rem;
+      color: $ThirdTextColor;
+      font-size: 16px;
+      @include break(991) {
+        font-size: 12px;
+      }
+      @include break(768) {
+        flex-direction: column-reverse;
+        gap: 0;
+      }
+
+
+      .contactUs {
+        display: flex;
+        gap: 28px;
+
+        a {
+          color: $ThirdTextColor;
+          font-size: 1em;
+        }
+
+        @include break(768) {
+          padding-top: 2rem;
+          padding-bottom: 28px;
+        }
+      }
+    }
+
+    p {
+      color: $FourthTextColor;
+      font-weight: 100;
+      font-size: 1em;
+    }
+
+    &--social {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      cursor: pointer;
+      @include break(768) {
+        justify-content: center;
+        padding-top: 0.5rem;
+      }
+    }
+  }
+
+}
