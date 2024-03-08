@@ -32,20 +32,20 @@
 // })
 
 
-const hamburgerIcon = document.querySelector(".hamburgerIcon");
-const hamburgerMenu = document.querySelector("#hamburgerMenu");
-const closeIcon = document.querySelector(".closeIcon");
-
-
-hamburgerIcon.addEventListener('click', function () {
-    hamburgerMenu.style.display = "block";
-
-    // hamburgerMenu.classList.add("anime")
-})
-
-closeIcon.addEventListener('click', function () {
-    hamburgerMenu.style.display = "none";
-})
+// const hamburgerIcon = document.querySelector(".hamburgerIcon");
+// const hamburgerMenu = document.querySelector("#hamburgerMenu");
+// const closeIcon = document.querySelector(".closeIcon");
+//
+//
+// hamburgerIcon.addEventListener('click', function () {
+//     hamburgerMenu.style.display = "block";
+//
+//     // hamburgerMenu.classList.add("anime")
+// })
+//
+// closeIcon.addEventListener('click', function () {
+//     hamburgerMenu.style.display = "none";
+// })
 
 
 

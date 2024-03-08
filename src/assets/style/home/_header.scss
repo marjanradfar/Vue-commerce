@@ -7,17 +7,67 @@
     justify-content: space-between;
     align-items: center;
     min-height: 3.75rem;
-
+    margin-bottom: 0.5rem;
     @include break(768) {
       display: none !important;
+    }
+
+    &--logo {
+      a{
+        display: flex;
+      }
+    }
+
+    &--listMenu {
+      .menu {
+        & > :first-child {
+          //background: red;
+          a {
+            color: $mainTextColor;
+          }
+        }
+
+        li a {
+          color: $secondaryTextColor;
+
+          &:hover {
+            color: $mainTextColor;
+          }
+        }
+      }
     }
 
     &--toolbar {
       display: flex;
       justify-content: center;
-      align-items: center;
+      //align-items: center;
+      align-items: flex-start;
       gap: 1rem;
       cursor: pointer;
+
+      & > div {
+        width: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & img {
+          width: 100%;
+        }
+      }
+
+      .purchaseNum {
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        padding: 12px;
+        background-color: $mainTextColor;
+        color: $ThirdTextColor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
     }
 
   }
@@ -38,6 +88,7 @@
       display: flex;
       gap: 4px;
       align-items: center;
+
 
       .hamburgerIcon {
         width: 32px;
@@ -79,7 +130,7 @@
     background-color: $backgroundWhite;
     transition: transform 0.3s ease;
     animation-duration: 0.5s;
-    @include  break(360){
+    @include break(360) {
       width: 100%;
     }
 
@@ -94,7 +145,7 @@
       left: 0;
       top: 0;
       right: 100%;
-      @include break(360){
+      @include break(360) {
         display: none;
       }
     }
@@ -165,37 +216,20 @@
 }
 
 
-.anime {
-  //animation: slide-in 0.6s ease-in-out;
-  transform: translateX(-100%);
-
-  //@keyframes slide-in {
-  //  0% {
-  //    transform: translateX(-100%);
-  //  }
-  //  100% {
-  //    transform: translateX(0);
-  //  }
-  //}
-}
-
-//.closeAnime {
-//  animation: slide-out 0.5s ease-in-out;
-//  @keyframes slide-out {
-//    0% {
-//      transform: translateX(0);
-//    }
-//    100% {
-//      transform: translateX(-100%);
-//    }
-//  }
+//.anime {
+//  //animation: slide-in 0.6s ease-in-out;
+//  transform: translateX(-100%);
+//
+//  //@keyframes slide-in {
+//  //  0% {
+//  //    transform: translateX(-100%);
+//  //  }
+//  //  100% {
+//  //    transform: translateX(0);
+//  //  }
+//  //}
 //}
 
-
-
-.hamburgerMenu.open {
-  //transform: translateX(0%);
-}
 
 
 

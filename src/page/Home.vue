@@ -411,7 +411,6 @@ const headerItems = {
     {img:search},
     {img:UserCircle},
     {img:shoppingBag},
-    {img:search},
   ],
 
 }
