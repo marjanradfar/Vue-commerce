@@ -20,7 +20,7 @@
   <main>
 
     <div class="heroBanner container animate__animated animate__zoomIn">
-      <SingleSwiper :data="heroData"/>
+      <SingleSwiper :data="dataHero"/>
       <div class="heroBanner__content">
         <h1 class="heroBanner__content--title largeText">
           به سادگی منحصر به فرد<br>
@@ -394,8 +394,9 @@ import shoppingBag from '../assets/image/icon/shoppingBag.svg';
 //import image
 import logo from '../assets/image/3legant.svg';
 import SingleSofa from "../assets/image/newArrivals/singleSofa.png";
+import Star from '../assets/image/icon/starFill.svg'
 
-const heroData = [
+const dataHero = [
   {img: imgHero},
   {img: imgHero},
   {img: imgHero},
@@ -449,45 +450,148 @@ const dataNewArrivals = {
   },
   swiperItems: [
     {
-      img: SingleSofa,
+      imgProduct: SingleSofa,
       btnNEW: "جدید",
-      btnDiscount: "50%",
-      btnAddToCard: "افزودن به سبد خرید"
-    }, {
-      img: SingleSofa,
+      btnDiscount: "- 50%",
+      btnAddToCard: "افزودن به سبد خرید",
+      rate: [
+        {imgRating: Star},
+        {imgRating: Star},
+        {imgRating: Star},
+        {imgRating: Star},
+        {imgRating: Star},
+      ],
+      title: "مبل صندلی دوست داشتنی",
+      priceMain: "$199.00",
+      priceOff: "$400.00",
+    },
+    {
+      imgProduct: SingleSofa,
       btnNEW: "جدید",
-      btnDiscount: "50%",
-      btnAddToCard: "افزودن به سبد خرید"
-    }, {
-      img: SingleSofa,
+      btnDiscount: "- 50%",
+      btnAddToCard: "افزودن به سبد خرید",
+      rate: [
+        {imgRating: Star},
+        {imgRating: Star},
+        {imgRating: Star},
+        {imgRating: Star},
+        {imgRating: Star},
+      ],
+      title: "مبل صندلی دوست داشتنی",
+      priceMain: "$199.00",
+      priceOff: "$400.00",
+    },
+    {
+      imgProduct: SingleSofa,
       btnNEW: "جدید",
-      btnDiscount: "50%",
-      btnAddToCard: "افزودن به سبد خرید"
-    }, {
-      img: SingleSofa,
+      btnDiscount: "- 50%",
+      btnAddToCard: "افزودن به سبد خرید",
+      rate: [
+        {imgRating: Star},
+        {imgRating: Star},
+        {imgRating: Star},
+        {imgRating: Star},
+        {imgRating: Star},
+      ],
+      title: "مبل صندلی دوست داشتنی",
+      priceMain: "$199.00",
+      priceOff: "$400.00",
+    },
+    {
+      imgProduct: SingleSofa,
       btnNEW: "جدید",
-      btnDiscount: "50%",
-      btnAddToCard: "افزودن به سبد خرید"
-    }, {
-      img: SingleSofa,
+      btnDiscount: "- 50%",
+      btnAddToCard: "افزودن به سبد خرید",
+      rate: [
+        {imgRating: Star},
+        {imgRating: Star},
+        {imgRating: Star},
+        {imgRating: Star},
+        {imgRating: Star},
+      ],
+      title: "مبل صندلی دوست داشتنی",
+      priceMain: "$199.00",
+      priceOff: "$400.00",
+    },
+    {
+      imgProduct: SingleSofa,
       btnNEW: "جدید",
-      btnDiscount: "50%",
-      btnAddToCard: "افزودن به سبد خرید"
-    }, {
-      img: SingleSofa,
+      btnDiscount: "- 50%",
+      btnAddToCard: "افزودن به سبد خرید",
+      rate: [
+        {imgRating: Star},
+        {imgRating: Star},
+        {imgRating: Star},
+        {imgRating: Star},
+        {imgRating: Star},
+      ],
+      title: "مبل صندلی دوست داشتنی",
+      priceMain: "$199.00",
+      priceOff: "$400.00",
+    },
+    {
+      imgProduct: SingleSofa,
       btnNEW: "جدید",
-      btnDiscount: "50%",
-      btnAddToCard: "افزودن به سبد خرید"
-    }, {
-      img: SingleSofa,
+      btnDiscount: "- 50%",
+      btnAddToCard: "افزودن به سبد خرید",
+      rate: [
+        {imgRating: Star},
+        {imgRating: Star},
+        {imgRating: Star},
+        {imgRating: Star},
+        {imgRating: Star},
+      ],
+      title: "مبل صندلی دوست داشتنی",
+      priceMain: "$199.00",
+      priceOff: "$400.00",
+    },
+    {
+      imgProduct: SingleSofa,
       btnNEW: "جدید",
-      btnDiscount: "50%",
-      btnAddToCard: "افزودن به سبد خرید"
-    }, {
-      img: SingleSofa,
+      btnDiscount: "- 50%",
+      btnAddToCard: "افزودن به سبد خرید",
+      rate: [
+        {imgRating: Star},
+        {imgRating: Star},
+        {imgRating: Star},
+        {imgRating: Star},
+        {imgRating: Star},
+      ],
+      title: "مبل صندلی دوست داشتنی",
+      priceMain: "$199.00",
+      priceOff: "$400.00",
+    },
+    {
+      imgProduct: SingleSofa,
       btnNEW: "جدید",
-      btnDiscount: "50%",
-      btnAddToCard: "افزودن به سبد خرید"
+      btnDiscount: "- 50%",
+      btnAddToCard: "افزودن به سبد خرید",
+      rate: [
+        {imgRating: Star},
+        {imgRating: Star},
+        {imgRating: Star},
+        {imgRating: Star},
+        {imgRating: Star},
+      ],
+      title: "مبل صندلی دوست داشتنی",
+      priceMain: "$199.00",
+      priceOff: "$400.00",
+    },
+    {
+      imgProduct: SingleSofa,
+      btnNEW: "جدید",
+      btnDiscount: "- 50%",
+      btnAddToCard: "افزودن به سبد خرید",
+      rate: [
+        {imgRating: Star},
+        {imgRating: Star},
+        {imgRating: Star},
+        {imgRating: Star},
+        {imgRating: Star},
+      ],
+      title: "مبل صندلی دوست داشتنی",
+      priceMain: "$199.00",
+      priceOff: "$400.00",
     },
   ],
 }
