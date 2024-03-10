@@ -85,123 +85,7 @@
       </div>
     </section>
 
-    <!--section New Arrivals-->
-    <!--    <section class="newArrivals">-->
-    <!--      <div class="articles__head container">-->
-    <!--        <h1 class="extraMediumText">-->
-    <!--          جدید<br>-->
-    <!--          ترین ها-->
-    <!--        </h1>-->
-    <!--        <div class="goShop borderButton black">-->
-    <!--          <a href="#">-->
-    <!--            <span class="smallText">محصولات بیشتر</span>-->
-    <!--            <img src="../assets/image/icon/swiper arrow/arrow-left.svg"/>-->
-    <!--          </a>-->
-    <!--        </div>-->
-    <!--      </div>-->
-    <!--      <div class="newArrivals__wrapper">-->
-    <!--        <div class="newArrivals__wrapper&#45;&#45;cart">-->
-    <!--          <div class="imgCartContainer">-->
-    <!--            <img class="imgCart" src="../assets/image/newArrivals/singleSofa.png" ALT="single sofa"/>-->
-    <!--            <div class="discountNew"></div>-->
-    <!--          </div>-->
-    <!--          <div class="content">-->
-    <!--            <div class="content__rating">-->
-    <!--              <img src="../assets/image/icon/starFill.svg">-->
-    <!--              <img src="../assets/image/icon/starFill.svg">-->
-    <!--              <img src="../assets/image/icon/starFill.svg">-->
-    <!--              <img src="../assets/image/icon/starFill.svg">-->
-    <!--              <img src="../assets/image/icon/starFill.svg">-->
-    <!--            </div>-->
-    <!--            <span class="content__title">مبل صندلی دوست داشتنی</span>-->
-    <!--            <div class="content__price">-->
-    <!--              <span class="content__price&#45;&#45;main smallLightText">$199.00</span>-->
-    <!--              <span class="content__price&#45;&#45;off smallLightText">$400.00</span>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--        </div>-->
-    <!--        <div class="newArrivals__wrapper&#45;&#45;cart">-->
-    <!--          <div class="imgCartContainer">-->
-    <!--            <img class="imgCart" src="../assets/image/newArrivals/tableLamp.png" ALT="single sofa"/>-->
-    <!--            <div class="discountNew"></div>-->
-    <!--          </div>-->
-    <!--          <div class="content">-->
-    <!--            <div class="content__rating">-->
-    <!--              <img src="../assets/image/icon/starFill.svg">-->
-    <!--              <img src="../assets/image/icon/starFill.svg">-->
-    <!--              <img src="../assets/image/icon/starFill.svg">-->
-    <!--              <img src="../assets/image/icon/starFill.svg">-->
-    <!--              <img src="../assets/image/icon/starFill.svg">-->
-    <!--            </div>-->
-    <!--            <span class="content__title">چراغ رومیزی</span>-->
-    <!--            <div class="content__price">-->
-    <!--              <span class="content__price&#45;&#45;main smallLightText">$199.00</span>-->
-    <!--              <span class="content__price&#45;&#45;off smallLightText">$400.00</span>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--        </div>-->
-    <!--        <div class="newArrivals__wrapper&#45;&#45;cart">-->
-    <!--          <div class="imgCartContainer">-->
-    <!--            <img class="imgCart" src="../assets/image/newArrivals/BeigeTableLamp.png" ALT="single sofa"/>-->
-    <!--            <div class="discountNew"></div>-->
-    <!--          </div>-->
-    <!--          <div class="content">-->
-    <!--            <div class="content__rating">-->
-    <!--              <img src="../assets/image/icon/starFill.svg">-->
-    <!--              <img src="../assets/image/icon/starFill.svg">-->
-    <!--              <img src="../assets/image/icon/starFill.svg">-->
-    <!--              <img src="../assets/image/icon/starFill.svg">-->
-    <!--              <img src="../assets/image/icon/starFill.svg">-->
-    <!--            </div>-->
-    <!--            <span class="content__title">چراغ رومیزی بژ</span>-->
-    <!--            <div class="content__price">-->
-    <!--              <span class="content__price&#45;&#45;main smallLightText">$199.00</span>-->
-    <!--              <span class="content__price&#45;&#45;off smallLightText">$400.00</span>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--        </div>-->
-    <!--        <div class="newArrivals__wrapper&#45;&#45;cart">-->
-    <!--          <div class="imgCartContainer">-->
-    <!--            <img class="imgCart" src="../assets/image/newArrivals/Bamboobasket.png" ALT="single sofa"/>-->
-    <!--            <div class="discountNew"></div>-->
-    <!--          </div>-->
-    <!--          <div class="content">-->
-    <!--            <div class="content__rating">-->
-    <!--              <img src="../assets/image/icon/starFill.svg">-->
-    <!--              <img src="../assets/image/icon/starFill.svg">-->
-    <!--              <img src="../assets/image/icon/starFill.svg">-->
-    <!--              <img src="../assets/image/icon/starFill.svg">-->
-    <!--              <img src="../assets/image/icon/starFill.svg">-->
-    <!--            </div>-->
-    <!--            <span class="content__title">سبد بامبو</span>-->
-    <!--            <div class="content__price">-->
-    <!--              <span class="content__price&#45;&#45;main smallLightText">$199.00</span>-->
-    <!--              <span class="content__price&#45;&#45;off smallLightText">$400.00</span>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--        </div>-->
-    <!--        <div class="newArrivals__wrapper&#45;&#45;cart">-->
-    <!--          <div class="imgCartContainer">-->
-    <!--            <img class="imgCart" src="../assets/image/newArrivals/Toasted.png" ALT="single sofa"/>-->
-    <!--            <div class="discountNew"></div>-->
-    <!--          </div>-->
-    <!--          <div class="content">-->
-    <!--            <div class="content__rating">-->
-    <!--              <img src="../assets/image/icon/starFill.svg">-->
-    <!--              <img src="../assets/image/icon/starFill.svg">-->
-    <!--              <img src="../assets/image/icon/starFill.svg">-->
-    <!--              <img src="../assets/image/icon/starFill.svg">-->
-    <!--              <img src="../assets/image/icon/starFill.svg">-->
-    <!--            </div>-->
-    <!--            <span class="content__title">توستر</span>-->
-    <!--            <div class="content__price">-->
-    <!--              <span class="content__price&#45;&#45;main smallLightText">$199.00</span>-->
-    <!--              <span class="content__price&#45;&#45;off smallLightText">$400.00</span>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--        </div>-->
-    <!--      </div>-->
-    <!--    </section>-->
+
     <SwiperCardProgress :dataItems="dataNewArrivals"/>
 
 
@@ -270,114 +154,69 @@
     <!--section Articles-->
     <section class="articles container">
       <div class="articles__head">
-        <h1 class="extraMediumText">مقالات</h1>
+        <h1 class="extraMediumText">{{ articles.title }}</h1>
         <div class="goShop borderButton black">
           <a href="#">
-            <span class="smallText">مقالات بیشتر</span>
-            <img src="../assets/image/icon/swiper arrow/arrow-left.svg"/>
+            <span class="smallText">{{articles.moreArticles}}</span>
+            <img :src="articles.iconMoreArticles"/>
           </a>
         </div>
       </div>
       <div class="articles__item">
-        <div class="articles__item--box">
+        <div class="articles__item--box" v-for="(item , index) in articles.items">
           <div class="boxImg">
-            <img src="../assets/image/articles/decoreHome.png"/>
+            <img :src="item.imgArticle"/>
           </div>
           <div class="boxText">
-            <p class="mediumLightText">۷ روش برای تزیین خانه</p>
+            <p class="mediumLightText">{{item.title}}</p>
             <div class="goShop borderButton black">
               <a href="#">
-                <span class="smallText">ادامه مطلب</span>
-                <img src="../assets/image/icon/swiper arrow/arrow-left.svg"/>
+                <span class="smallText">{{item.readMore}}</span>
+                <img :src="item.iconReadMore" />
               </a>
             </div>
           </div>
         </div>
-        <div class="articles__item--box">
-          <div class="boxImg">
-            <img src="../assets/image/articles/kitchenOrganization.png"/>
-          </div>
-          <div class="boxText">
-            <p class="mediumLightText">سازماندهی آشپزخانه</p>
-            <div class="goShop borderButton black">
-              <a href="#">
-                <span class="smallText">ادامه مطلب</span>
-                <img src="../assets/image/icon/swiper arrow/arrow-left.svg"/>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="articles__item--box">
-          <div class="boxImg">
-            <img src="../assets/image/articles/decoreBedroom.png"/>
-          </div>
-          <div class="boxText">
-            <p class="mediumLightText">اتاق خواب خود را تزئین کنید</p>
-            <div class="goShop borderButton black">
-              <a href="#">
-                <span class="smallText">ادامه مطلب</span>
-                <img src="../assets/image/icon/swiper arrow/arrow-left.svg"/>
-              </a>
-            </div>
-          </div>
-        </div>
+
       </div>
     </section>
 
-    <!--    section Newsletter-->
-    <div class="newsletter">
-      <img src="../assets/image/banner/Newsletter.png" class="back">
-      <div class="newsletter__content">
-        <div class="newsletter__content--title">
-          <h1 class="extraMediumText">به خبرنامه ما بپیوندید</h1>
-          <p class="extraSmallText">برای معاملات، محصولات جدید و تبلیغات ثبت نام کنید</p>
+    <Newsletter :data="dataNewsletter"/>
+  </main>
+  <footer class="footer">
+    <div class="footer__content ">
+      <div class="footer__content--logo">
+        <div class="logo">
+          <img src="../assets/image/3legantWhite.svg">
         </div>
-        <div class="newsletter__content--input">
-          <div class="email">
-            <img id="logo" class="svg" src="../assets/image/icon/email.svg" alt="Some awesome company"/>
-            <input type="email" placeholder="آدرس ایمیل">
-          </div>
-          <span class="singUp">ثبت نام</span>
+        <div class="space">|</div>
+        <p>فروشگاه هدایا و دکوراسیون</p></div>
+      <nav class="footer__content--listMenu">
+        <ul class="menu">
+          <li class="menu__item"><a href="#">خانه</a></li>
+          <li class="menu__item"><a href="#">فروشگاه</a></li>
+          <li class="menu__item"><a href="#">محصولات</a></li>
+          <li class="menu__item"><a href="#">درباره ما</a></li>
+        </ul>
+      </nav>
+    </div>
+    <hr/>
+    <div class="footer__copyRight ">
+      <div class="footer__copyRight--text">
+        <p>Copyright © 2023 3legant. All rights reserved</p>
+        <div class="contactUs">
+          <a href="#">حریم خصوصی</a>
+          <a href="#">شرایط استفاده</a>
         </div>
+      </div>
+      <div class="footer__copyRight--social">
+        <img src="../assets/image/icon/instagram.svg"/>
+        <img src="../assets/image/icon/facebook.svg"/>
+        <img src="../assets/image/icon/youtube.svg"/>
       </div>
     </div>
 
-    <footer class="footer">
-      <div class="footer__content ">
-        <div class="footer__content--logo">
-          <div class="logo">
-            <img src="../assets/image/3legantWhite.svg">
-          </div>
-          <div class="space">|</div>
-          <p>فروشگاه هدایا و دکوراسیون</p></div>
-        <nav class="footer__content--listMenu">
-          <ul class="menu">
-            <li class="menu__item"><a href="#">خانه</a></li>
-            <li class="menu__item"><a href="#">فروشگاه</a></li>
-            <li class="menu__item"><a href="#">محصولات</a></li>
-            <li class="menu__item"><a href="#">درباره ما</a></li>
-          </ul>
-        </nav>
-      </div>
-      <hr/>
-      <div class="footer__copyRight ">
-        <div class="footer__copyRight--text">
-          <p>Copyright © 2023 3legant. All rights reserved</p>
-          <div class="contactUs">
-            <a href="#">حریم خصوصی</a>
-            <a href="#">شرایط استفاده</a>
-          </div>
-        </div>
-        <div class="footer__copyRight--social">
-          <img src="../assets/image/icon/instagram.svg"/>
-          <img src="../assets/image/icon/facebook.svg"/>
-          <img src="../assets/image/icon/youtube.svg"/>
-        </div>
-      </div>
-
-    </footer>
-
-  </main>
+  </footer>
 </template>
 <script setup>
 
@@ -386,15 +225,20 @@ import SingleSwiper from '../components/SingleSwiper.vue';
 import Header from '../components/common/Header.vue';
 import imgHero from '../assets/image/banner/bannerSwiperHome.png';
 import SwiperCardProgress from "../components/SwiperCardProgress.vue";
+import Newsletter from "../components/section/Newsletter.vue";
 //import icon from
 import search from '../assets/image/icon/search.svg';
 import UserCircle from '../assets/image/icon/userCircle.svg';
 import shoppingBag from '../assets/image/icon/shoppingBag.svg';
+import BannerNewsletter from '../assets/image/banner/Newsletter.png';
+import Star from '../assets/image/icon/starFill.svg';
+import ArrowLeft from "../assets/image/icon/swiper arrow/arrow-left.svg";
 
 //import image
 import logo from '../assets/image/3legant.svg';
 import SingleSofa from "../assets/image/newArrivals/singleSofa.png";
-import Star from '../assets/image/icon/starFill.svg'
+import DecorHome from "../assets/image/articles/decoreHome.png";
+
 
 const dataHero = [
   {img: imgHero},
@@ -595,4 +439,37 @@ const dataNewArrivals = {
     },
   ],
 }
+
+const dataNewsletter = {
+  img: BannerNewsletter,
+  title: "به خبرنامه ما بپیوندید",
+  subTitle: "برای معاملات، محصولات جدید و تبلیغات ثبت نام کنید"
+}
+
+const articles = {
+  title: "مقالات",
+  moreArticles: "مقالات بیشتر",
+  iconMoreArticles: ArrowLeft,
+  items: [
+    {
+      imgArticle:DecorHome,
+      title:"۷ روش برای تزیین خانه",
+      readMore:"ادامه مطلب",
+      iconReadMore:ArrowLeft,
+    },
+    {
+      imgArticle:DecorHome,
+      title:"۷ روش برای تزیین خانه",
+      readMore:"ادامه مطلب",
+      iconReadMore:ArrowLeft,
+    },
+    {
+      imgArticle:DecorHome,
+      title:"۷ روش برای تزیین خانه",
+      readMore:"ادامه مطلب",
+      iconReadMore:ArrowLeft,
+    },
+  ],
+}
+
 </script>
