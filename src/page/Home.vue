@@ -1,4 +1,5 @@
 <template>
+  <!--pop up in top home page-->
   <div class="navOff container">
     <div class="navOff__content">
       <img src="../assets/image/icon/ticket-percent.svg"/>
@@ -14,11 +15,11 @@
   </div>
 
   <Header :data="headerItems"/>
-  <!--banner swiper home page-->
 
   <!--The main body of the  Home page-->
   <main>
 
+    <!--banner swiper home page-->
     <div class="heroBanner container animate__animated animate__zoomIn">
       <SingleSwiper :data="dataHero"/>
       <div class="heroBanner__content">
@@ -37,7 +38,8 @@
         </p>
       </div>
     </div>
-    <!--    banner one home page-->
+
+    <!-- banner one home page-->
     <section class="bannerShop container">
       <div class="itemFlex">
         <div class="bannerShop__item">
@@ -85,49 +87,11 @@
       </div>
     </section>
 
-
+    <!-- section NewArrivals-->
     <SwiperCardProgress :dataItems="dataNewArrivals"/>
 
-
     <!-- section Support home page-->
-    <section class="support container">
-      <div class="support__item">
-        <div class="support__item--icon">
-          <img src="../assets/image/support/fastDelivery.svg"/>
-        </div>
-        <div class="support__item--text">
-          <h2 class="mediumLightText">ارسال رایگان</h2>
-          <span class="smallText">سفارش بالای 200 دلار</span>
-        </div>
-      </div>
-      <div class="support__item">
-        <div class="support__item--icon">
-          <img src="../assets/image/support/money.svg"/>
-        </div>
-        <div class="support__item--text">
-          <h2 class="mediumLightText">بازگشت هزینه</h2>
-          <span class="smallText">30 روز گارانتی</span>
-        </div>
-      </div>
-      <div class="support__item">
-        <div class="support__item--icon">
-          <img src="../assets/image/support/lock.svg"/>
-        </div>
-        <div class="support__item--text">
-          <h2 class="mediumLightText">پرداخت های امن</h2>
-          <span class="smallText">توسط Stripe ایمن شده است</span>
-        </div>
-      </div>
-      <div class="support__item">
-        <div class="support__item--icon">
-          <img src="../assets/image/support/call.svg"/>
-        </div>
-        <div class="support__item--text">
-          <h2 class="mediumLightText">پشتیبانی 24/7</h2>
-          <span class="smallText">پشتیبانی تلفنی و ایمیلی</span>
-        </div>
-      </div>
-    </section>
+    <ContactSupport :data="supportData"/>
 
     <!--The price of banners with low prices-->
     <div class="bannerOff">
@@ -151,13 +115,14 @@
       </div>
 
     </div>
+
     <!--section Articles-->
     <section class="articles container">
       <div class="articles__head">
         <h1 class="extraMediumText">{{ articles.title }}</h1>
         <div class="goShop borderButton black">
           <a href="#">
-            <span class="smallText">{{articles.moreArticles}}</span>
+            <span class="smallText">{{ articles.moreArticles }}</span>
             <img :src="articles.iconMoreArticles"/>
           </a>
         </div>
@@ -168,11 +133,11 @@
             <img :src="item.imgArticle"/>
           </div>
           <div class="boxText">
-            <p class="mediumLightText">{{item.title}}</p>
+            <p class="mediumLightText">{{ item.title }}</p>
             <div class="goShop borderButton black">
               <a href="#">
-                <span class="smallText">{{item.readMore}}</span>
-                <img :src="item.iconReadMore" />
+                <span class="smallText">{{ item.readMore }}</span>
+                <img :src="item.iconReadMore"/>
               </a>
             </div>
           </div>
@@ -181,7 +146,9 @@
       </div>
     </section>
 
+    <!--section Newsletter-->
     <Newsletter :data="dataNewsletter"/>
+
   </main>
   <footer class="footer">
     <div class="footer__content ">
@@ -226,6 +193,7 @@ import Header from '../components/common/Header.vue';
 import imgHero from '../assets/image/banner/bannerSwiperHome.png';
 import SwiperCardProgress from "../components/SwiperCardProgress.vue";
 import Newsletter from "../components/section/Newsletter.vue";
+import ContactSupport from "../components/section/ContactSupport.vue";
 //import icon from
 import search from '../assets/image/icon/search.svg';
 import UserCircle from '../assets/image/icon/userCircle.svg';
@@ -233,11 +201,18 @@ import shoppingBag from '../assets/image/icon/shoppingBag.svg';
 import BannerNewsletter from '../assets/image/banner/Newsletter.png';
 import Star from '../assets/image/icon/starFill.svg';
 import ArrowLeft from "../assets/image/icon/swiper arrow/arrow-left.svg";
+import FastDelivery from "../assets/image/support/fastDelivery.svg";
+import Money from "../assets/image/support/money.svg";
+import Lock from "../assets/image/support/lock.svg";
+import Call from "../assets/image/support/call.svg";
+
 
 //import image
 import logo from '../assets/image/3legant.svg';
 import SingleSofa from "../assets/image/newArrivals/singleSofa.png";
 import DecorHome from "../assets/image/articles/decoreHome.png";
+import DecorBedroom from "../assets/image/articles/decoreBedroom.png";
+import KitchenOrganization from "../assets/image/articles/kitchenOrganization.png";
 
 
 const dataHero = [
@@ -452,24 +427,46 @@ const articles = {
   iconMoreArticles: ArrowLeft,
   items: [
     {
-      imgArticle:DecorHome,
-      title:"۷ روش برای تزیین خانه",
-      readMore:"ادامه مطلب",
-      iconReadMore:ArrowLeft,
+      imgArticle: DecorHome,
+      title: "۷ روش برای تزیین خانه",
+      readMore: "ادامه مطلب",
+      iconReadMore: ArrowLeft,
     },
     {
-      imgArticle:DecorHome,
-      title:"۷ روش برای تزیین خانه",
-      readMore:"ادامه مطلب",
-      iconReadMore:ArrowLeft,
+      imgArticle: KitchenOrganization,
+      title: "سازماندهی آشپزخانه",
+      readMore: "ادامه مطلب",
+      iconReadMore: ArrowLeft,
     },
     {
-      imgArticle:DecorHome,
-      title:"۷ روش برای تزیین خانه",
-      readMore:"ادامه مطلب",
-      iconReadMore:ArrowLeft,
+      imgArticle: DecorBedroom,
+      title: "اتاق خواب خود را تزئین کنید",
+      readMore: "ادامه مطلب",
+      iconReadMore: ArrowLeft,
     },
   ],
 }
 
+const supportData = [
+  {
+    img: FastDelivery,
+    title: "ارسال رایگان",
+    subTitle: "سفارش بالای 200 دلار"
+  },
+  {
+    img: Money,
+    title: "بازگشت هزینه",
+    subTitle: "30 روز گارانتی"
+  },
+  {
+    img: Lock,
+    title: "پرداخت های امن",
+    subTitle: "توسط Stripe ایمن شده است"
+  },
+  {
+    img: Call,
+    title: "پشتیبانی 24/7",
+    subTitle: "پشتیبانی تلفنی و ایمیلی"
+  },
+]
 </script>
