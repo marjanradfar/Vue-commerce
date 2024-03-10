@@ -1,19 +1,19 @@
-.btnFixCart {
-  font-family: "Pinar";
-  position: absolute;
-  bottom: 5%;
-  left: 5%;
-  border: none;
-  border-radius: 5px;
-
-  &:hover {
-    border: 1px solid $mainTextColor!important;
-    background-color: $ThirdTextColor!important;
-    color: $mainTextColor!important;
-  }
-
-
-}
+//.btnFixCart {
+//  font-family: "Pinar";
+//  position: absolute;
+//  bottom: 5%;
+//  left: 5%;
+//  border: none;
+//  border-radius: 5px;
+//
+//  &:hover {
+//    border: 1px solid $mainTextColor!important;
+//    background-color: $ThirdTextColor!important;
+//    color: $mainTextColor!important;
+//  }
+//
+//
+//}
 
 .discountNew {
   direction: ltr;
@@ -23,9 +23,11 @@
   align-items: flex-end;
   gap: 8px;
   position: absolute;
-  top: 5%;
+  top: 0;
   left: 0;
-  right: 5%;
+  right: 0;
+  padding-right: 5%;
+  padding-top: 5%;
 
   & > * {
     border: none;
@@ -33,6 +35,35 @@
     font-family: "Pinar";
   }
 
+}
+
+.btn{
+  font-family: "pinar";
+  border: none;
+  border-radius: 4px;
+}
+.btnNEW{
+  width:24%;
+  height: 2rem;
+  color: black;
+  background-color: white;
+}
+.btnDiscount{
+  width:24%;
+  height: 2rem;
+  color: #FEFEFE;
+  background-color: #38CB89;
+}
+
+.btnAddToCard{
+  width: 90%;
+  height: 2.875rem;
+  background-color: $mainTextColor;
+  color: #FEFEFE;
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  left: 0;
 }
 
 

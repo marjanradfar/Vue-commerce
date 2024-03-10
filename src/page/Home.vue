@@ -86,122 +86,123 @@
     </section>
 
     <!--section New Arrivals-->
-    <section class="newArrivals">
-      <div class="articles__head container">
-        <h1 class="extraMediumText">
-          جدید<br>
-          ترین ها
-        </h1>
-        <div class="goShop borderButton black">
-          <a href="#">
-            <span class="smallText">محصولات بیشتر</span>
-            <img src="../assets/image/icon/swiper arrow/arrow-left.svg"/>
-          </a>
-        </div>
-      </div>
-      <div class="newArrivals__wrapper">
-        <div class="newArrivals__wrapper--cart">
-          <div class="imgCartContainer">
-            <img class="imgCart" src="../assets/image/newArrivals/singleSofa.png" ALT="single sofa"/>
-            <div class="discountNew"></div>
-          </div>
-          <div class="content">
-            <div class="content__rating">
-              <img src="../assets/image/icon/starFill.svg">
-              <img src="../assets/image/icon/starFill.svg">
-              <img src="../assets/image/icon/starFill.svg">
-              <img src="../assets/image/icon/starFill.svg">
-              <img src="../assets/image/icon/starFill.svg">
-            </div>
-            <span class="content__title">مبل صندلی دوست داشتنی</span>
-            <div class="content__price">
-              <span class="content__price--main smallLightText">$199.00</span>
-              <span class="content__price--off smallLightText">$400.00</span>
-            </div>
-          </div>
-        </div>
-        <div class="newArrivals__wrapper--cart">
-          <div class="imgCartContainer">
-            <img class="imgCart" src="../assets/image/newArrivals/tableLamp.png" ALT="single sofa"/>
-            <div class="discountNew"></div>
-          </div>
-          <div class="content">
-            <div class="content__rating">
-              <img src="../assets/image/icon/starFill.svg">
-              <img src="../assets/image/icon/starFill.svg">
-              <img src="../assets/image/icon/starFill.svg">
-              <img src="../assets/image/icon/starFill.svg">
-              <img src="../assets/image/icon/starFill.svg">
-            </div>
-            <span class="content__title">چراغ رومیزی</span>
-            <div class="content__price">
-              <span class="content__price--main smallLightText">$199.00</span>
-              <span class="content__price--off smallLightText">$400.00</span>
-            </div>
-          </div>
-        </div>
-        <div class="newArrivals__wrapper--cart">
-          <div class="imgCartContainer">
-            <img class="imgCart" src="../assets/image/newArrivals/BeigeTableLamp.png" ALT="single sofa"/>
-            <div class="discountNew"></div>
-          </div>
-          <div class="content">
-            <div class="content__rating">
-              <img src="../assets/image/icon/starFill.svg">
-              <img src="../assets/image/icon/starFill.svg">
-              <img src="../assets/image/icon/starFill.svg">
-              <img src="../assets/image/icon/starFill.svg">
-              <img src="../assets/image/icon/starFill.svg">
-            </div>
-            <span class="content__title">چراغ رومیزی بژ</span>
-            <div class="content__price">
-              <span class="content__price--main smallLightText">$199.00</span>
-              <span class="content__price--off smallLightText">$400.00</span>
-            </div>
-          </div>
-        </div>
-        <div class="newArrivals__wrapper--cart">
-          <div class="imgCartContainer">
-            <img class="imgCart" src="../assets/image/newArrivals/Bamboobasket.png" ALT="single sofa"/>
-            <div class="discountNew"></div>
-          </div>
-          <div class="content">
-            <div class="content__rating">
-              <img src="../assets/image/icon/starFill.svg">
-              <img src="../assets/image/icon/starFill.svg">
-              <img src="../assets/image/icon/starFill.svg">
-              <img src="../assets/image/icon/starFill.svg">
-              <img src="../assets/image/icon/starFill.svg">
-            </div>
-            <span class="content__title">سبد بامبو</span>
-            <div class="content__price">
-              <span class="content__price--main smallLightText">$199.00</span>
-              <span class="content__price--off smallLightText">$400.00</span>
-            </div>
-          </div>
-        </div>
-        <div class="newArrivals__wrapper--cart">
-          <div class="imgCartContainer">
-            <img class="imgCart" src="../assets/image/newArrivals/Toasted.png" ALT="single sofa"/>
-            <div class="discountNew"></div>
-          </div>
-          <div class="content">
-            <div class="content__rating">
-              <img src="../assets/image/icon/starFill.svg">
-              <img src="../assets/image/icon/starFill.svg">
-              <img src="../assets/image/icon/starFill.svg">
-              <img src="../assets/image/icon/starFill.svg">
-              <img src="../assets/image/icon/starFill.svg">
-            </div>
-            <span class="content__title">توستر</span>
-            <div class="content__price">
-              <span class="content__price--main smallLightText">$199.00</span>
-              <span class="content__price--off smallLightText">$400.00</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!--    <section class="newArrivals">-->
+    <!--      <div class="articles__head container">-->
+    <!--        <h1 class="extraMediumText">-->
+    <!--          جدید<br>-->
+    <!--          ترین ها-->
+    <!--        </h1>-->
+    <!--        <div class="goShop borderButton black">-->
+    <!--          <a href="#">-->
+    <!--            <span class="smallText">محصولات بیشتر</span>-->
+    <!--            <img src="../assets/image/icon/swiper arrow/arrow-left.svg"/>-->
+    <!--          </a>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--      <div class="newArrivals__wrapper">-->
+    <!--        <div class="newArrivals__wrapper&#45;&#45;cart">-->
+    <!--          <div class="imgCartContainer">-->
+    <!--            <img class="imgCart" src="../assets/image/newArrivals/singleSofa.png" ALT="single sofa"/>-->
+    <!--            <div class="discountNew"></div>-->
+    <!--          </div>-->
+    <!--          <div class="content">-->
+    <!--            <div class="content__rating">-->
+    <!--              <img src="../assets/image/icon/starFill.svg">-->
+    <!--              <img src="../assets/image/icon/starFill.svg">-->
+    <!--              <img src="../assets/image/icon/starFill.svg">-->
+    <!--              <img src="../assets/image/icon/starFill.svg">-->
+    <!--              <img src="../assets/image/icon/starFill.svg">-->
+    <!--            </div>-->
+    <!--            <span class="content__title">مبل صندلی دوست داشتنی</span>-->
+    <!--            <div class="content__price">-->
+    <!--              <span class="content__price&#45;&#45;main smallLightText">$199.00</span>-->
+    <!--              <span class="content__price&#45;&#45;off smallLightText">$400.00</span>-->
+    <!--            </div>-->
+    <!--          </div>-->
+    <!--        </div>-->
+    <!--        <div class="newArrivals__wrapper&#45;&#45;cart">-->
+    <!--          <div class="imgCartContainer">-->
+    <!--            <img class="imgCart" src="../assets/image/newArrivals/tableLamp.png" ALT="single sofa"/>-->
+    <!--            <div class="discountNew"></div>-->
+    <!--          </div>-->
+    <!--          <div class="content">-->
+    <!--            <div class="content__rating">-->
+    <!--              <img src="../assets/image/icon/starFill.svg">-->
+    <!--              <img src="../assets/image/icon/starFill.svg">-->
+    <!--              <img src="../assets/image/icon/starFill.svg">-->
+    <!--              <img src="../assets/image/icon/starFill.svg">-->
+    <!--              <img src="../assets/image/icon/starFill.svg">-->
+    <!--            </div>-->
+    <!--            <span class="content__title">چراغ رومیزی</span>-->
+    <!--            <div class="content__price">-->
+    <!--              <span class="content__price&#45;&#45;main smallLightText">$199.00</span>-->
+    <!--              <span class="content__price&#45;&#45;off smallLightText">$400.00</span>-->
+    <!--            </div>-->
+    <!--          </div>-->
+    <!--        </div>-->
+    <!--        <div class="newArrivals__wrapper&#45;&#45;cart">-->
+    <!--          <div class="imgCartContainer">-->
+    <!--            <img class="imgCart" src="../assets/image/newArrivals/BeigeTableLamp.png" ALT="single sofa"/>-->
+    <!--            <div class="discountNew"></div>-->
+    <!--          </div>-->
+    <!--          <div class="content">-->
+    <!--            <div class="content__rating">-->
+    <!--              <img src="../assets/image/icon/starFill.svg">-->
+    <!--              <img src="../assets/image/icon/starFill.svg">-->
+    <!--              <img src="../assets/image/icon/starFill.svg">-->
+    <!--              <img src="../assets/image/icon/starFill.svg">-->
+    <!--              <img src="../assets/image/icon/starFill.svg">-->
+    <!--            </div>-->
+    <!--            <span class="content__title">چراغ رومیزی بژ</span>-->
+    <!--            <div class="content__price">-->
+    <!--              <span class="content__price&#45;&#45;main smallLightText">$199.00</span>-->
+    <!--              <span class="content__price&#45;&#45;off smallLightText">$400.00</span>-->
+    <!--            </div>-->
+    <!--          </div>-->
+    <!--        </div>-->
+    <!--        <div class="newArrivals__wrapper&#45;&#45;cart">-->
+    <!--          <div class="imgCartContainer">-->
+    <!--            <img class="imgCart" src="../assets/image/newArrivals/Bamboobasket.png" ALT="single sofa"/>-->
+    <!--            <div class="discountNew"></div>-->
+    <!--          </div>-->
+    <!--          <div class="content">-->
+    <!--            <div class="content__rating">-->
+    <!--              <img src="../assets/image/icon/starFill.svg">-->
+    <!--              <img src="../assets/image/icon/starFill.svg">-->
+    <!--              <img src="../assets/image/icon/starFill.svg">-->
+    <!--              <img src="../assets/image/icon/starFill.svg">-->
+    <!--              <img src="../assets/image/icon/starFill.svg">-->
+    <!--            </div>-->
+    <!--            <span class="content__title">سبد بامبو</span>-->
+    <!--            <div class="content__price">-->
+    <!--              <span class="content__price&#45;&#45;main smallLightText">$199.00</span>-->
+    <!--              <span class="content__price&#45;&#45;off smallLightText">$400.00</span>-->
+    <!--            </div>-->
+    <!--          </div>-->
+    <!--        </div>-->
+    <!--        <div class="newArrivals__wrapper&#45;&#45;cart">-->
+    <!--          <div class="imgCartContainer">-->
+    <!--            <img class="imgCart" src="../assets/image/newArrivals/Toasted.png" ALT="single sofa"/>-->
+    <!--            <div class="discountNew"></div>-->
+    <!--          </div>-->
+    <!--          <div class="content">-->
+    <!--            <div class="content__rating">-->
+    <!--              <img src="../assets/image/icon/starFill.svg">-->
+    <!--              <img src="../assets/image/icon/starFill.svg">-->
+    <!--              <img src="../assets/image/icon/starFill.svg">-->
+    <!--              <img src="../assets/image/icon/starFill.svg">-->
+    <!--              <img src="../assets/image/icon/starFill.svg">-->
+    <!--            </div>-->
+    <!--            <span class="content__title">توستر</span>-->
+    <!--            <div class="content__price">-->
+    <!--              <span class="content__price&#45;&#45;main smallLightText">$199.00</span>-->
+    <!--              <span class="content__price&#45;&#45;off smallLightText">$400.00</span>-->
+    <!--            </div>-->
+    <!--          </div>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--    </section>-->
+    <SwiperCardProgress :dataItems="dataNewArrivals"/>
 
 
     <!-- section Support home page-->
@@ -376,20 +377,23 @@
 
     </footer>
 
-
   </main>
 </template>
 <script setup>
+
+//import component
 import SingleSwiper from '../components/SingleSwiper.vue';
-import Header from '../components/common/Header.vue'
+import Header from '../components/common/Header.vue';
 import imgHero from '../assets/image/banner/bannerSwiperHome.png';
-//import icon
+import SwiperCardProgress from "../components/SwiperCardProgress.vue";
+//import icon from
 import search from '../assets/image/icon/search.svg';
 import UserCircle from '../assets/image/icon/userCircle.svg';
 import shoppingBag from '../assets/image/icon/shoppingBag.svg';
 
 //import image
 import logo from '../assets/image/3legant.svg';
+import SingleSofa from "../assets/image/newArrivals/singleSofa.png";
 
 const heroData = [
   {img: imgHero},
@@ -400,19 +404,91 @@ const heroData = [
 ]
 
 const headerItems = {
-  logo:logo,
+  logo: logo,
   menu: [
     {url: "#", link: "خانه"},
     {url: "#", link: "فروشگاه"},
     {url: "#", link: "محصولات"},
     {url: "#", link: "درباره ما"},
   ],
-  toolbar:[
-    {img:search},
-    {img:UserCircle},
-    {img:shoppingBag},
+  toolbar: [
+    {img: search},
+    {img: UserCircle},
+    {img: shoppingBag},
   ],
 
 }
 
+const dataNewArrivals = {
+  name: "dataNewArrivals",
+  spaceBetween: 20,
+  slidesPerView: 4,
+  breakpoints: {
+    1880: {
+      slidesPerView: 4
+    },
+    1440: {
+      slidesPerView: 3.8
+    },
+    1024: {
+      slidesPerView: 3.5
+    },
+    768: {
+      spaceBetween: 12,
+      slidesPerView: 3
+    },
+    480: {
+      slidesPerView: 2
+    },
+    375: {
+      slidesPerView: 1.3
+    },
+    320: {
+      slidesPerView: 1
+    },
+  },
+  swiperItems: [
+    {
+      img: SingleSofa,
+      btnNEW: "جدید",
+      btnDiscount: "50%",
+      btnAddToCard: "افزودن به سبد خرید"
+    }, {
+      img: SingleSofa,
+      btnNEW: "جدید",
+      btnDiscount: "50%",
+      btnAddToCard: "افزودن به سبد خرید"
+    }, {
+      img: SingleSofa,
+      btnNEW: "جدید",
+      btnDiscount: "50%",
+      btnAddToCard: "افزودن به سبد خرید"
+    }, {
+      img: SingleSofa,
+      btnNEW: "جدید",
+      btnDiscount: "50%",
+      btnAddToCard: "افزودن به سبد خرید"
+    }, {
+      img: SingleSofa,
+      btnNEW: "جدید",
+      btnDiscount: "50%",
+      btnAddToCard: "افزودن به سبد خرید"
+    }, {
+      img: SingleSofa,
+      btnNEW: "جدید",
+      btnDiscount: "50%",
+      btnAddToCard: "افزودن به سبد خرید"
+    }, {
+      img: SingleSofa,
+      btnNEW: "جدید",
+      btnDiscount: "50%",
+      btnAddToCard: "افزودن به سبد خرید"
+    }, {
+      img: SingleSofa,
+      btnNEW: "جدید",
+      btnDiscount: "50%",
+      btnAddToCard: "افزودن به سبد خرید"
+    },
+  ],
+}
 </script>
