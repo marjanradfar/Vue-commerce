@@ -3,18 +3,18 @@
   <header class="header">
     <section class="header__desk container">
       <div class="header__desk--logo">
-        <a href="#"><img :src="data.logo"/>
+        <a href="#"><img :src="headerItems.logo"/>
         </a>
       </div>
       <nav class="header__desk--listMenu">
         <ul class="menu">
-          <li class="menu__item " v-for="menuItem in data.menu">
+          <li class="menu__item " v-for="menuItem in headerItems.menu">
             <a :href="menuItem.url" class="active"> {{ menuItem.link }}</a>
           </li>
         </ul>
       </nav>
       <nav class="header__desk--toolbar">
-        <div v-for="toolbarImg in data.toolbar"><img :src="toolbarImg.img">
+        <div v-for="toolbarImg in headerItems.toolbar"><img :src="toolbarImg.img">
         </div>
         <span class="purchaseNum">2</span>
 
@@ -57,6 +57,27 @@
 </template>
 
 <script setup>
-const props = defineProps(["data",]);
+// const props = defineProps(["data",]);
 
+//import icon from
+import search from '@/assets/image/icon/search.svg';
+import UserCircle from '@/assets/image/icon/userCircle.svg';
+import shoppingBag from '@/assets/image/icon/shoppingBag.svg';
+import logo from '@/assets/image/3legant.svg';
+
+const headerItems = {
+  logo: logo,
+  menu: [
+    {url: "#", link: "خانه"},
+    {url: "#", link: "فروشگاه"},
+    {url: "#", link: "محصولات"},
+    {url: "#", link: "درباره ما"},
+  ],
+  toolbar: [
+    {img: search},
+    {img: UserCircle},
+    {img: shoppingBag},
+  ],
+
+}
 </script>

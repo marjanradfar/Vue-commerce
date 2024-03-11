@@ -1,18 +1,4 @@
 <template>
-  <!--pop up in top home page-->
-  <div class="navOff container">
-    <div class="navOff__content">
-      <img src="../assets/image/icon/ticket-percent.svg"/>
-      <span>30٪ تخفیف در سراسر فروشگاه - زمان محدود!</span>
-    </div>
-    <div class="goShop borderButton ">
-      <a href="#">
-        <span>همین الان بخر</span>
-        <img src="../assets/image/icon/swiper arrow/arrow-left.svg"/>
-      </a>
-    </div>
-
-  </div>
 
 <!--  <Header :data="headerItems"/>-->
 
@@ -150,40 +136,6 @@
     <Newsletter :data="dataNewsletter"/>
 
   </main>
-  <footer class="footer">
-    <div class="footer__content ">
-      <div class="footer__content--logo">
-        <div class="logo">
-          <img src="../assets/image/3legantWhite.svg">
-        </div>
-        <div class="space">|</div>
-        <p>فروشگاه هدایا و دکوراسیون</p></div>
-      <nav class="footer__content--listMenu">
-        <ul class="menu">
-          <li class="menu__item"><a href="#">خانه</a></li>
-          <li class="menu__item"><a href="#">فروشگاه</a></li>
-          <li class="menu__item"><a href="#">محصولات</a></li>
-          <li class="menu__item"><a href="#">درباره ما</a></li>
-        </ul>
-      </nav>
-    </div>
-    <hr/>
-    <div class="footer__copyRight ">
-      <div class="footer__copyRight--text">
-        <p>Copyright © 2023 3legant. All rights reserved</p>
-        <div class="contactUs">
-          <a href="#">حریم خصوصی</a>
-          <a href="#">شرایط استفاده</a>
-        </div>
-      </div>
-      <div class="footer__copyRight--social">
-        <img src="../assets/image/icon/instagram.svg"/>
-        <img src="../assets/image/icon/facebook.svg"/>
-        <img src="../assets/image/icon/youtube.svg"/>
-      </div>
-    </div>
-
-  </footer>
 </template>
 <script setup>
 
@@ -194,10 +146,7 @@ import imgHero from '../assets/image/banner/bannerSwiperHome.png';
 import SwiperCardProgress from "../components/SwiperCardProgress.vue";
 import Newsletter from "../components/section/Newsletter.vue";
 import ContactSupport from "../components/section/ContactSupport.vue";
-//import icon from
-import search from '../assets/image/icon/search.svg';
-import UserCircle from '../assets/image/icon/userCircle.svg';
-import shoppingBag from '../assets/image/icon/shoppingBag.svg';
+
 import BannerNewsletter from '../assets/image/banner/Newsletter.png';
 import Star from '../assets/image/icon/starFill.svg';
 import ArrowLeft from "../assets/image/icon/swiper arrow/arrow-left.svg";
@@ -208,7 +157,6 @@ import Call from "../assets/image/support/call.svg";
 
 
 //import image
-import logo from '../assets/image/3legant.svg';
 import SingleSofa from "../assets/image/newArrivals/singleSofa.png";
 import DecorHome from "../assets/image/articles/decoreHome.png";
 import DecorBedroom from "../assets/image/articles/decoreBedroom.png";
@@ -223,21 +171,7 @@ const dataHero = [
   {img: imgHero},
 ]
 
-// const headerItems = {
-//   logo: logo,
-//   menu: [
-//     {url: "#", link: "خانه"},
-//     {url: "#", link: "فروشگاه"},
-//     {url: "#", link: "محصولات"},
-//     {url: "#", link: "درباره ما"},
-//   ],
-//   toolbar: [
-//     {img: search},
-//     {img: UserCircle},
-//     {img: shoppingBag},
-//   ],
-//
-// }
+
 
 const dataNewArrivals = {
   name: "dataNewArrivals",
