@@ -14,7 +14,7 @@
 
   </div>
 
-  <Header :data="headerItems"/>
+<!--  <Header :data="headerItems"/>-->
 
   <!--The main body of the  Home page-->
   <main>
@@ -223,21 +223,21 @@ const dataHero = [
   {img: imgHero},
 ]
 
-const headerItems = {
-  logo: logo,
-  menu: [
-    {url: "#", link: "خانه"},
-    {url: "#", link: "فروشگاه"},
-    {url: "#", link: "محصولات"},
-    {url: "#", link: "درباره ما"},
-  ],
-  toolbar: [
-    {img: search},
-    {img: UserCircle},
-    {img: shoppingBag},
-  ],
-
-}
+// const headerItems = {
+//   logo: logo,
+//   menu: [
+//     {url: "#", link: "خانه"},
+//     {url: "#", link: "فروشگاه"},
+//     {url: "#", link: "محصولات"},
+//     {url: "#", link: "درباره ما"},
+//   ],
+//   toolbar: [
+//     {img: search},
+//     {img: UserCircle},
+//     {img: shoppingBag},
+//   ],
+//
+// }
 
 const dataNewArrivals = {
   name: "dataNewArrivals",

@@ -1,11 +1,14 @@
-import './assets/style/main.scss';
-// import './assets/js/index.js';
-import 'animate.css';
-
+//vue
 import { createApp } from 'vue'
 import App from './App.vue'
+import router from "./router";
+//scss
+import './assets/style/main.scss';
+import 'animate.css';
 
-createApp(App).mount('#app')
+
+
+createApp(App).use(router).mount("#app");
 
 //hamburgerMenu code
 const hamburgerIcon = document.querySelector(".hamburgerIcon");

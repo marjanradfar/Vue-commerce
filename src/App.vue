@@ -1,10 +1,11 @@
 <script setup>
-import './page/Home.vue'
-import Home from "@/page/Home.vue";
+
+import {RouterView} from 'vue-router'
 </script>
 
 <template>
-  <Home/>
+
+  <RouterView />
 </template>
 
 
