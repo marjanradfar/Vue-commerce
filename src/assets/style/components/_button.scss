@@ -1,20 +1,3 @@
-//.btnFixCart {
-//  font-family: "Pinar";
-//  position: absolute;
-//  bottom: 5%;
-//  left: 5%;
-//  border: none;
-//  border-radius: 5px;
-//
-//  &:hover {
-//    border: 1px solid $mainTextColor!important;
-//    background-color: $ThirdTextColor!important;
-//    color: $mainTextColor!important;
-//  }
-//
-//
-//}
-
 .discountNew {
   direction: ltr;
   width: 100%;
@@ -58,12 +41,20 @@
 .btnAddToCard{
   width: 90%;
   height: 2.875rem;
-  background-color: $mainTextColor;
-  color: #FEFEFE;
   position: absolute;
   right: 5%;
   bottom: 5%;
   left: 0;
+}
+
+.btnBlack{
+  background-color: $mainTextColor;
+  color: #FEFEFE;
+}
+
+.btnSingUp{
+  width: 456px;
+  height: 48px;
 }
 
 

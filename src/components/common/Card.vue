@@ -6,7 +6,7 @@
         <Button :text="data.btnNEW" className="btnNEW"/>
         <Button :text="data.btnDiscount" className="btnDiscount"/>
       </div>
-      <Button :text="data.btnAddToCard" className="btnAddToCard"/>
+      <Button :text="data.btnAddToCard" className="btnAddToCard btnBlack"/>
     </div>
     <div class="content">
       <div class="content__rating">
@@ -23,6 +23,7 @@
 </template>
 
 <script setup>
+
 import Button from  "../common/Button.vue";
 const props = defineProps(["data"]);
 

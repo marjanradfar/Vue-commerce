@@ -17,11 +17,15 @@ const isFooter = computed(()=>{
   const route = useRoute();
   return !!route.meta && route.meta.footer !== undefined? route.meta.footer : true;
 });
+const isNavOff = computed(()=>{
+  const route = useRoute();
+  return !!route.meta && route.meta.navOff !== undefined? route.meta.navOff : true;
+});
 
 </script>
 
 <template>
-  <NavOffBanner />
+  <NavOffBanner v-if="isNavOff"/>
   <Header v-if="isHeader"/>
 
 <!--  <RouterView/>-->
