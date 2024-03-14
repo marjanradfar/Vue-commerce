@@ -1,3 +1,14 @@
+btnContainer {
+
+}
+
+.btn {
+  font-family: "pinar";
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 .discountNew {
   direction: ltr;
   width: 100%;
@@ -20,25 +31,23 @@
 
 }
 
-.btn{
-  font-family: "pinar";
-  border: none;
-  border-radius: 4px;
-}
-.btnNEW{
-  width:24%;
+.btnNEW {
+  //width:24%;
+  width: 5rem;
   height: 2rem;
   color: black;
   background-color: white;
 }
-.btnDiscount{
-  width:24%;
+
+.btnDiscount {
+  //width:24%;
+  width: 5rem;
   height: 2rem;
   color: #FEFEFE;
   background-color: #38CB89;
 }
 
-.btnAddToCard{
+.btnAddToCard {
   width: 90%;
   height: 2.875rem;
   position: absolute;
@@ -47,12 +56,12 @@
   left: 0;
 }
 
-.btnBlack{
+.btnBlack {
   background-color: $mainTextColor;
   color: #FEFEFE;
 }
 
-.btnSingUp{
+.btnSingUp {
   width: 456px;
   height: 48px;
 }

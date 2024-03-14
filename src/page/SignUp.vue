@@ -7,14 +7,11 @@
           <p>از قبل حساب کاربری دارید؟ <span class="SignIn">ورود</span></p>
         </div>
         <div class="signUp__content--containerInputs">
-          <Input :data="test"/>
-          <Input :data="test"/>
-          <Input :data="test"/>
-          <Input :data="test"/>
+          <Input :data="input" v-for="input in dataInput.typeText"/>
         </div>
         <div class="signUp__content--agreement">
           <div class="agree">
-            <Input :data="test2" className="inputCheckbox"/>
+            <Input :data="dataInput.typeCheck" className="inputCheckbox"/>
             <p class="agree__text">من موافقم با<span>سیاست حفظ حریم خصوصی</span> و <span>شرایط استفاده</span></p>
           </div>
         </div>
@@ -37,13 +34,29 @@ import Button from "@/components/common/Button.vue";
 import Search from "../assets/image/icon/search.svg";
 
 
-const test = {
 
-  type: "text",
-  placeholder: "اسم شما"
-}
+const dataInput = {
+  typeText:[
+  {
+    type: "text",
+    placeholder: "اسم شما"
+  },
+  {
+    type: "text",
+    placeholder: "نام کاربری"
+  },
+  {
+    type: "email",
+    placeholder: "آدرس ایمیل"
+  },
+  {
+    type: "Password",
+    placeholder: "پسورد"
+  },
+],
+  typeCheck:{
+    type: "checkbox"
+  }
 
-const test2 = {
-  type: "checkbox",
 }
 </script>
