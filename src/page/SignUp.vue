@@ -2,9 +2,9 @@
   <div class="signUpContainer">
     <div class="signUp">
       <div class="signUp__content">
-        <div class="signUp__content--title">
-          <h2 class="SignUp">ثبت نام</h2>
-          <p>از قبل حساب کاربری دارید؟ <span class="SignIn">ورود</span></p>
+        <div class="signUp__content--title ">
+          <h2 class="SignUp extraMediumText">ثبت نام</h2>
+          <p class="smallText">از قبل حساب کاربری دارید؟ <span class="SignIn">ورود</span></p>
         </div>
         <div class="signUp__content--containerInputs">
           <Input :data="input" v-for="input in dataInput.typeText"/>
@@ -12,7 +12,7 @@
         <div class="signUp__content--agreement">
           <div class="agree">
             <Input :data="dataInput.typeCheck" className="inputCheckbox"/>
-            <p class="agree__text">من موافقم با<span>سیاست حفظ حریم خصوصی</span> و <span>شرایط استفاده</span></p>
+            <p class="agree__text smallText">من موافقم با<span>سیاست حفظ حریم خصوصی</span> و <span>شرایط استفاده</span></p>
           </div>
         </div>
         <Button text="ثبت نام" className="btnSingUp btnBlack "/>
@@ -31,7 +31,7 @@
 import Input from "@/components/common/Input.vue";
 import Button from "@/components/common/Button.vue";
 //import image
-import Search from "../assets/image/icon/search.svg";
+import Eye from "../assets/image/icon/eye.svg";
 
 
 
@@ -50,6 +50,7 @@ const dataInput = {
     placeholder: "آدرس ایمیل"
   },
   {
+    img:Eye,
     type: "Password",
     placeholder: "پسورد"
   },

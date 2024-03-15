@@ -8,6 +8,10 @@
   grid-template-columns: 100%;
   align-items: center;
   justify-content: center;
+  @include break(768) {
+    height: 100%;
+    align-items: flex-start;
+  }
 
   .signUp {
     width: 95%;
@@ -19,34 +23,75 @@
     box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16), -10px -10px 10px -1px rgba(2255, 255, 255, 0.7);
     display: grid;
     grid-template-columns: 55% 45%;
+    @include break(1024) {
+      grid-template-columns: 50% 50%;
+    }
+    @include break(768) {
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 40px;
+      margin-bottom: 40px;
+      box-shadow: none;
+      border-radius: 0;
+    }
 
     &__content {
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
       padding-right: 10%;
       padding-left: 5%;
-
-      &--title {
-        width: 456px;
+      @include break(768) {
+        padding-right: 10%;
+        padding-left: 10%;
+        align-items: center;
+      }
+      @include break(480) {
+        padding: 0;
       }
 
-      &--containerInputs {
-        .inputBox {
-          &__input {
-            padding-right: 0;
+      & > * {
+        width: 85%;
+      }
+
+      &--title {
+        .smallText {
+          span {
+            color: $btnAcceptable;
           }
         }
       }
 
+      &--containerInputs {
+        .inputBox {
+          width: 100%;
+
+          &__img {
+            left: 0;
+          }
+
+          &__input {
+            padding-right: 0;
+          }
+        }
+
+
+      }
+
       &--agreement {
         .agree {
-          width: 456px;
           display: flex;
           align-items: center;
           gap: 12px;
           margin: 12px 0;
+          color: $secondaryTextColor;
+          font-weight: 600;
+
+          span {
+            color: $mainTextColor;
+          }
         }
       }
     }
@@ -55,6 +100,9 @@
       width: fit-content;
       height: 100%;
       position: relative;
+      @include break(768) {
+        width: 100%;
+      }
 
       &--banner {
         width: 100%;
@@ -69,6 +117,7 @@
         text-align: center;
         left: 0;
         right: 0;
+
       }
     }
   }

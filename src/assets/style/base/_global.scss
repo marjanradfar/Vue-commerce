@@ -83,7 +83,15 @@ a {
   }
 }
 
-input{
+input {
   font-family: "Pinar";
+  font-size: 0.8em;
 
+  &::placeholder {
+
+  }
+
+  @include break(768) {
+    font-size: 1.2em;
+  }
 }

@@ -1,17 +1,19 @@
 .inputBox {
   position: relative;
+  width: 456px;
 
   &__img {
     position: absolute;
     top: 25%;
     bottom: 0;
-    right: 1%;
+    //right: 1%;
   }
 
   &__input {
     border: none;
     border-bottom: 1px solid $FourthTextColor;
-    width: 456px;
+    //width: 456px;
+    width: 100%;
     height: 40px;
     padding: 24px 50px 24px 24px;
   }
