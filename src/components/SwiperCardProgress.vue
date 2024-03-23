@@ -4,6 +4,7 @@
       :pagination="{
       type: 'progressbar',
     }"
+      :navigation="{clickable: true}"
       :slides-per-view="dataItems.slidesPerView"
       :space-between="dataItems.spaceBetween"
       :breakpoints="dataItems.breakpoints"

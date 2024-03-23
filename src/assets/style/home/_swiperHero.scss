@@ -22,6 +22,7 @@
       }
     }
   }
+
   .swiper-button-next,
   .swiper-button-prev {
     background-color: $backgroundWhite;
@@ -33,12 +34,15 @@
       display: none;
     }
 
-    &::after {
-      display: none;
-    }
-
     img {
       width: 100%;
+    }
+  }
+
+  .swiper-button-next {
+
+    &::after{
+      content: url(../../image/icon/arrow-right.svg)!important;
     }
   }
 

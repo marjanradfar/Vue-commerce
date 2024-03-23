@@ -28,7 +28,12 @@ const router = createRouter({
                 navOff:false
             }
         },
+        {
+            path: "/",
+            name: "Product",
+            component: Product,
 
+        },
     ],
 });
 

@@ -1,20 +1,17 @@
 <template>
   <swiper
       :scssMode="true"
-      :navigation="{clickable: true }"
-      :pagination="true"
-      :mousewheel="true"
+      :navigation="{clickable: true}"
+      :pagination="data"
+      :mousewheel="data"
       :keyboard="true"
       :modules="modules"
       class="mySwiper singleImg"
   >
     <swiper-slide v-for="(slide, index) in data" key="index" class="singleImg__slide">
-        <img :src="slide.img"/>
+      <img :src="slide.img"/>
     </swiper-slide>
-
-     Add navigation buttons
-    <div class="swiper-button-next" ><img src="../assets/image/icon/arrow-right.svg"/></div>
-    <div class="swiper-button-prev"><img src="../assets/image/icon/arrow-right.svg"/></div>
+    <!--    Add navigation buttons-->
   </swiper>
 </template>
 <script setup>
@@ -28,6 +25,8 @@ import 'swiper/scss/pagination';
 
 // import required modules
 import {Navigation, Pagination, Mousewheel, Keyboard} from 'swiper/modules';
+
 const props = defineProps(["data"]);
-const modules =[Navigation, Pagination, Mousewheel, Keyboard];
+const modules = [Navigation, Pagination, Mousewheel, Keyboard];
+
 </script>

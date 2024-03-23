@@ -23,7 +23,7 @@ btnContainer {
   right: 0;
   padding-right: 5%;
   padding-top: 5%;
-
+  z-index: 100;
   & > * {
     border: none;
     border-radius: 4px;
