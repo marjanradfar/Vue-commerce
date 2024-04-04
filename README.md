@@ -2,7 +2,7 @@
 
 # project name:  vue-commerce
 
-A store site that has many pages and From the figma file I used.
+A store site that has many pages 
 
 
 ## Project Setup
