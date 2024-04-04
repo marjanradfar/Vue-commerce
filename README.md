@@ -1,14 +1,10 @@
-# vue-commerce
+## Practice project with Vue
 
-This template should help get you started developing with Vue 3 in Vite.
+# project name:  vue-commerce
 
-## Recommended IDE Setup
+A store site that has many pages and From the figma file I used.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+link figma file: https://www.figma.com/file/D0Yn6A4NWUVrdy5mJgawyj/3legant-E-Commerce-UI-Design-Template-(Community)?type=design&node-id=3%3A674&mode=design&t=AfXfMicFbYmyDGun-1
 
 ## Project Setup
 
