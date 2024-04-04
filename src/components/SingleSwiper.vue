@@ -1,17 +1,17 @@
 <template>
   <swiper
       :scssMode="true"
-      :navigation="{clickable: true}"
-      :pagination="data"
-      :mousewheel="data"
+      :pagination="data.pagination"
+      :navigation="data.navigation"
+      :mousewheel="false"
       :keyboard="true"
       :modules="modules"
       class="mySwiper singleImg"
   >
-    <swiper-slide v-for="(slide, index) in data" key="index" class="singleImg__slide">
+    <swiper-slide v-for="(slide, index) in data.items" key="index" class="singleImg__slide">
       <img :src="slide.img"/>
     </swiper-slide>
-    <!--    Add navigation buttons-->
+    <!--Add navigation buttons-->
   </swiper>
 </template>
 <script setup>

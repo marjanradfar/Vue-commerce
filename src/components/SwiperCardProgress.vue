@@ -2,9 +2,10 @@
   <swiper
       :freeMode="true"
       :pagination="{
-      type: 'progressbar',
+      type: 'progressbar'
     }"
-      :navigation="{clickable: true}"
+      :mousewheel="dataItems"
+      :keyboard="dataItems"
       :slides-per-view="dataItems.slidesPerView"
       :space-between="dataItems.spaceBetween"
       :breakpoints="dataItems.breakpoints"
@@ -30,6 +31,6 @@ import {FreeMode, Pagination} from 'swiper/modules';
 
 const modules = [FreeMode, Pagination];
 
-const props = defineProps(["dataItems", "breakpoints"]);
+const props = defineProps(["dataItems", ]);
 
 </script>

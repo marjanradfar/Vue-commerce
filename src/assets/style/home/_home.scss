@@ -30,20 +30,21 @@
 
 }
 
-.swiperCard{
-  margin-right: 8%!important;
-  padding-left: 8%!important;
-  .swiper-pagination-progressbar{
+.swiperCard {
+  margin-right: 8% !important;
+  padding-left: 8% !important;
+
+  .swiper-pagination-progressbar {
     background-color: $FourthTextColor;
     margin-left: 9%;
   }
-  .swiper-pagination-progressbar-fill{
-    background-color: $mainTextColor!important;
 
+  .swiper-pagination-progressbar-fill {
+    background-color: $mainTextColor !important;
   }
-  .swiper-pagination-horizontal{
-  }
+
 }
+
 //todo:section support
 .support {
   display: grid;
@@ -347,7 +348,8 @@
         gap: 0.5rem;
         padding-bottom: 40px;
       }
-      .logo{
+
+      .logo {
         display: flex;
         align-items: center;
       }

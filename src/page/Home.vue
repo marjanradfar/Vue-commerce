@@ -163,13 +163,21 @@ import DecorBedroom from "../assets/image/articles/decoreBedroom.png";
 import KitchenOrganization from "../assets/image/articles/kitchenOrganization.png";
 
 
-const dataHero = [
-  {img: imgHero},
-  {img: imgHero},
-  {img: imgHero},
-  {img: imgHero},
-  {img: imgHero},
-]
+const dataHero = {
+  navigation:true,
+  pagination:true,
+  mousewheel:false,
+
+  items:[
+    {img: imgHero},
+    {img: imgHero},
+    {img: imgHero},
+    {img: imgHero},
+    {img: imgHero},
+  ],
+}
+
+
 
 
 
@@ -177,6 +185,8 @@ const dataNewArrivals = {
   name: "dataNewArrivals",
   spaceBetween: 20,
   slidesPerView: 4,
+  mousewheel:false,
+  keyboard:false,
   breakpoints: {
     1880: {
       slidesPerView: 4
