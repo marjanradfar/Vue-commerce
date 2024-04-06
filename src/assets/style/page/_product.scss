@@ -15,7 +15,6 @@
 
       .item {
         width: 30%;
-        //height: 200px;
 
         & > img {
           width: 100%;
@@ -23,6 +22,11 @@
           object-fit: fill;
         }
       }
+    }
+  }
+  &__details{
+    &--price{
+
     }
   }
 }

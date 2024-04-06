@@ -214,7 +214,7 @@ const dataNewArrivals = {
   swiperItems: [
     {
       imgProduct: SingleSofa,
-      btnNEW: "جدید",
+      btnNew: "جدید",
       btnDiscount: "- 50%",
       btnAddToCard: "افزودن به سبد خرید",
       rate: [
@@ -230,7 +230,7 @@ const dataNewArrivals = {
     },
     {
       imgProduct: SingleSofa,
-      btnNEW: "جدید",
+      btnNew: "جدید",
       btnDiscount: "- 50%",
       btnAddToCard: "افزودن به سبد خرید",
       rate: [
@@ -246,7 +246,7 @@ const dataNewArrivals = {
     },
     {
       imgProduct: SingleSofa,
-      btnNEW: "جدید",
+      btnNew: "جدید",
       btnDiscount: "- 50%",
       btnAddToCard: "افزودن به سبد خرید",
       rate: [
@@ -262,7 +262,8 @@ const dataNewArrivals = {
     },
     {
       imgProduct: SingleSofa,
-      btnNEW: "جدید",
+      btnNew
+          : "جدید",
       btnDiscount: "- 50%",
       btnAddToCard: "افزودن به سبد خرید",
       rate: [
@@ -278,7 +279,7 @@ const dataNewArrivals = {
     },
     {
       imgProduct: SingleSofa,
-      btnNEW: "جدید",
+      btnNew: "جدید",
       btnDiscount: "- 50%",
       btnAddToCard: "افزودن به سبد خرید",
       rate: [
@@ -294,7 +295,7 @@ const dataNewArrivals = {
     },
     {
       imgProduct: SingleSofa,
-      btnNEW: "جدید",
+      btnNew: "جدید",
       btnDiscount: "- 50%",
       btnAddToCard: "افزودن به سبد خرید",
       rate: [
@@ -310,7 +311,7 @@ const dataNewArrivals = {
     },
     {
       imgProduct: SingleSofa,
-      btnNEW: "جدید",
+      btnNew: "جدید",
       btnDiscount: "- 50%",
       btnAddToCard: "افزودن به سبد خرید",
       rate: [
@@ -326,7 +327,7 @@ const dataNewArrivals = {
     },
     {
       imgProduct: SingleSofa,
-      btnNEW: "جدید",
+      btnNew: "جدید",
       btnDiscount: "- 50%",
       btnAddToCard: "افزودن به سبد خرید",
       rate: [
@@ -342,7 +343,7 @@ const dataNewArrivals = {
     },
     {
       imgProduct: SingleSofa,
-      btnNEW: "جدید",
+      btnNew: "جدید",
       btnDiscount: "- 50%",
       btnAddToCard: "افزودن به سبد خرید",
       rate: [

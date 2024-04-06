@@ -52,7 +52,6 @@
 //According to Figma 18px
 .extraSmallText{
   font-size: 1.125em;
-
 }
 
 //According to Figma 16px
@@ -64,6 +63,16 @@
 //According to Figma 14px
 .smallLightText{
   font-size: 0.8em;
+}
+
+//color text project
+
+.discountedPrice{
+  color:  $mainTextColor;
+}
+
+.originalPrice{
+  color: $secondaryTextColor;
 }
 
 

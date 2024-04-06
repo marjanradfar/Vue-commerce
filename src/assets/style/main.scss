@@ -5,12 +5,12 @@
 @import "base/typography";
 
 //todo: styles in home page
-@import "home/home";
-@import "home/swiperHero";
-@import "./home/heroBanner";
-@import "./home/bannerShop";
-@import "./home/newArrivals";
-@import "home/header";
+@import "page/home";
+@import "page/home/swiperHero";
+@import "page/home/heroBanner";
+@import "page/home/bannerShop";
+@import "page/home/newArrivals";
+@import "page/home/header";
 
 //todo: signUp
 @import "page/signUp";
@@ -21,5 +21,5 @@
 @import "components/input";
 
 //todo: style product page
-@import "product/product";
+@import "page/product";
 

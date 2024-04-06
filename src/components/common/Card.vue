@@ -3,7 +3,7 @@
     <div class="imgCartContainer">
       <img class="imgCart" :src="data.imgProduct" />
       <div class="discountNew">
-        <Button :text="data.btnNEW" className="btnNEW"/>
+        <Button :text="data.btnNew" className="btnNew"/>
         <Button :text="data.btnDiscount" className="btnDiscount"/>
       </div>
       <Button :text="data.btnAddToCard" className="btnAddToCard btnBlack"/>
