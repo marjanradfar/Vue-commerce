@@ -6,9 +6,9 @@
       :mousewheel="false"
       :keyboard="true"
       :modules="modules"
-      class="mySwiper singleImg"
+      class="mySwiper swiperSingleImg"
   >
-    <swiper-slide v-for="(slide, index) in data.items" key="index" class="singleImg__slide">
+    <swiper-slide v-for="(slide, index) in data.items" key="index" class="swiperSingleImg__slide">
       <img :src="slide.img"/>
     </swiper-slide>
     <!--Add navigation buttons-->

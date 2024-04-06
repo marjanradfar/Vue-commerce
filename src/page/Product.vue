@@ -39,7 +39,7 @@ import Two from "../assets/image/product/two.png"
 import Three from "../assets/image/product/three.png"
 
 const imgProduct = {
-  navigation:false,
+  navigation:true,
   pagination: true,
   mousewheel: false,
   items: [

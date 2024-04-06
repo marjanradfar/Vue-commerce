@@ -2,6 +2,17 @@
 .heroBanner {
   font-family: "Pinar";
 
+  .swiperSingleImg {
+    &__slide {
+      @include break(991) {
+        height: 400px;
+      }
+      @include break(580) {
+        height: 260px;
+      }
+    }
+  }
+
   &__content {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -31,7 +42,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      @include break(768){
+      @include break(768) {
         text-align: center;
       }
       @include break(480) {
@@ -56,7 +67,6 @@
 
       }
     }
-
 
   }
 

@@ -1,12 +1,24 @@
 .product {
   display: grid;
   grid-template-columns: 50% 50%;
+  @include break(480) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
   &__img {
     width: 100%;
-    &--swiperImg{
+
+    &--swiperImg {
       position: relative;
+
+      .swiperSingleImg {
+        img {
+          padding-bottom: 1rem;
+        }
+      }
     }
+
     &--smallImg {
       width: 100%;
       display: flex;
@@ -24,8 +36,10 @@
       }
     }
   }
-  &__details{
-    &--price{
+
+  &__details {
+    padding-left: 1rem;
+    &--price {
 
     }
   }

@@ -1,18 +1,10 @@
 //todo: style swiper single image in hero home page
-.singleImg {
+.swiperSingleImg {
   direction: ltr;
-  //.swiper-wrapper {
-  //  width: 100% !important;
-  //
-  //}
+
   &__slide {
     width: 100%;
-    @include break(991) {
-      height: 400px;
-    }
-    @include break(580) {
-      height: 260px;
-    }
+
 
     img {
       width: 100%;
@@ -26,8 +18,8 @@
   .swiper-button-next,
   .swiper-button-prev {
     background-color: $backgroundWhite;
-    width: 4%;
-    height: 8%;
+    width: 52px;
+    height: 52px;
     border-radius: 999rem;
     padding: 1%;
     @include break(991) {
