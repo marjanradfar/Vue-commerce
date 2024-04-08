@@ -17,37 +17,35 @@
         <span>Offer expires in:</span>
       </div>
       <hr/>
-      <div class="product__details--sizProduct">
+      <div class="product__details--productSize">
         Measurements
       </div>
-      <div class="product__details--colorProduct">
+      <div class="product__details--productColor">
         Choose Color
-        <span class="colorProduct__nameColor"></span>
+        <div class="colorProduct__nameColor">black</div>
         <div class="colorProduct__thumbnails">
-          <span class="thumbnails__colorName">black</span>
-          <ul class="thumbnails__imgContainer">
-            <li class="thumbnails__imgContainer--img">
-              <img src="../assets/image/product/TrayTable.png"/>
-            </li>
-          </ul>
+          <img :src="img.img" v-for="img in thumbnails"/>
         </div>
+      </div>
+      <div class="product__details--Wishlist">
+        
       </div>
     </div>
 
     <div class="product__img">
-      <div class="product__img--swiperImg">
-        <SingleSwiper :data="imgProduct"/>
-        <div class="discountNew">
-          <Button text="جدید" className="btnNew"/>
-          <Button text="-50%" className="btnDiscount"/>
-        </div>
-      </div>
-      <ul class="product__img--smallImg">
-        <li class="item" v-for="item in imgProduct.smallImg">
-          <img :src="item.img"/>
-        </li>
-      </ul>
-      <Thumbs :data="thumbnails"/>
+<!--      <div class="product__img&#45;&#45;swiperImg">-->
+<!--        <SingleSwiper :data="imgProduct"/>-->
+<!--        <div class="discountNew">-->
+<!--          <Button text="جدید" className="btnNew"/>-->
+<!--          <Button text="-50%" className="btnDiscount"/>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <ul class="product__img&#45;&#45;smallImg">-->
+<!--        <li class="item" v-for="item in imgProduct.smallImg">-->
+<!--          <img :src="item.img"/>-->
+<!--        </li>-->
+<!--      </ul>-->
+      <Thumbs :data="swiperThumbnails"/>
 
     </div>
 
@@ -56,7 +54,6 @@
 <script setup>
 //import components
 import Breadcrumbs from "../components/common/Breadcrumbs.vue";
-import SingleSwiper from "../components/SingleSwiper.vue";
 import Button from "../components/common/Button.vue"
 
 //import img
@@ -65,26 +62,31 @@ import One from "../assets/image/product/one.png";
 import Two from "../assets/image/product/two.png";
 import Three from "../assets/image/product/three.png";
 
+//import img thumbnails
+import  thumb1 from "../assets/image/product/TrayTableBeige.png";
+import  thumb2 from "../assets/image/product/TrayTableBeigeRed.png";
+import  thumb3 from "../assets/image/product/TrayTableBeigeWhite.png";
+
 //import component
 import Thumbs from "../components/swiperThumbs.vue";
 
-const imgProduct = {
-  navigation: true,
-  pagination: true,
-  mousewheel: false,
-  items: [
-    {img: TrayTable},
-    {img: TrayTable},
-    {img: TrayTable},
-  ],
-  smallImg: [
-    {img: Three},
-    {img: Two},
-    {img: One},
-  ]
-}
+// const imgProduct = {
+//   navigation: true,
+//   pagination: true,
+//   mousewheel: false,
+//   items: [
+//     {img: TrayTable},
+//     {img: TrayTable},
+//     {img: TrayTable},
+//   ],
+//   smallImg: [
+//     {img: Three},
+//     {img: Two},
+//     {img: One},
+//   ]
+// }
 
-const thumbnails = {
+const swiperThumbnails = {
   spaceBetween: 10,
   navigation: true,
   pagination:true,
@@ -99,4 +101,10 @@ const thumbnails = {
     {img: One},
   ]
 }
+
+const thumbnails =[
+  {img:thumb1},
+  {img:thumb2},
+  {img:thumb3},
+]
 </script>

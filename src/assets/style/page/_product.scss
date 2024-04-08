@@ -1,6 +1,6 @@
 .product {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 60% 40%;
   @include break(480) {
     display: flex;
     flex-direction: column-reverse;
@@ -39,13 +39,15 @@
     .swiperThumbs {
       &__Thumbs {
         width: 100%;
-
         &--slide {
+          height: auto;
+
           img {
             width: 100%;
             height: 100%;
           }
         }
+        padding-bottom: 1rem;
       }
 
       &__thumbnails {
@@ -69,18 +71,8 @@
   }
 
   &__details {
-    padding-left: 1rem;
+    padding-left: 10%;
 
-    &--infoProduct {
-      &--price {
 
-      }
-    }
-
-    &--sizProduct {
-    }
-
-    &--colorProduct {
-    }
   }
 }
