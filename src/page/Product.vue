@@ -2,14 +2,38 @@
   <Breadcrumbs class="container"/>
   <div class="product container">
     <div class="product__details">
-      <p class="extraMediumText">میز سینی</p>
-      <p class="smallText">یکی بخرید یا چند تا بخرید و هر فضایی را که می نشینید راحت تر کنید. جابجایی سبک و آسان با رویه سینی قابل جابجایی
-        که برای سرو تنقلات مفید است.</p>
-      <div class="product__details--price">
-        <span class="discountedPrice mediumLightText">199.000</span>
-        <span class="originalPrice mediumLightText">400.00</span>
+      <div class="product__details--infoProduct">
+        <p class="extraMediumText">میز سینی</p>
+        <p class="smallText">یکی بخرید یا چند تا بخرید و هر فضایی را که می نشینید راحت تر کنید. جابجایی سبک و آسان با
+          رویه سینی قابل جابجایی
+          که برای سرو تنقلات مفید است.</p>
+        <div class="product__details--price">
+          <span class="discountedPrice mediumLightText">199.000</span>
+          <span class="originalPrice mediumLightText">400.00</span>
+        </div>
+        <hr/>
+      </div>
+      <div class="product__details--offer">
+        <span>Offer expires in:</span>
+      </div>
+      <hr/>
+      <div class="product__details--sizProduct">
+        Measurements
+      </div>
+      <div class="product__details--colorProduct">
+        Choose Color
+        <span class="colorProduct__nameColor"></span>
+        <div class="colorProduct__thumbnails">
+          <span class="thumbnails__colorName">black</span>
+          <ul class="thumbnails__imgContainer">
+            <li class="thumbnails__imgContainer--img">
+              <img src="../assets/image/product/TrayTable.png"/>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
+
     <div class="product__img">
       <div class="product__img--swiperImg">
         <SingleSwiper :data="imgProduct"/>
@@ -23,7 +47,10 @@
           <img :src="item.img"/>
         </li>
       </ul>
+      <Thumbs :data="thumbnails"/>
+
     </div>
+
   </div>
 </template>
 <script setup>
@@ -34,12 +61,15 @@ import Button from "../components/common/Button.vue"
 
 //import img
 import TrayTable from "../assets/image/product/TrayTable.png";
-import One from "../assets/image/product/one.png"
-import Two from "../assets/image/product/two.png"
-import Three from "../assets/image/product/three.png"
+import One from "../assets/image/product/one.png";
+import Two from "../assets/image/product/two.png";
+import Three from "../assets/image/product/three.png";
+
+//import component
+import Thumbs from "../components/swiperThumbs.vue";
 
 const imgProduct = {
-  navigation:true,
+  navigation: true,
   pagination: true,
   mousewheel: false,
   items: [
@@ -48,6 +78,22 @@ const imgProduct = {
     {img: TrayTable},
   ],
   smallImg: [
+    {img: Three},
+    {img: Two},
+    {img: One},
+  ]
+}
+
+const thumbnails = {
+  spaceBetween: 10,
+  navigation: true,
+  pagination:true,
+  items: [
+    {img: Three},
+    {img: Two},
+    {img: One},
+  ],
+  thumbs: [
     {img: Three},
     {img: Two},
     {img: One},

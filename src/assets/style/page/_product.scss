@@ -35,12 +35,52 @@
         }
       }
     }
+
+    .swiperThumbs {
+      &__Thumbs {
+        width: 100%;
+
+        &--slide {
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+
+      &__thumbnails {
+        width: 100%;
+        .swiper-wrapper{
+          justify-content: space-between;
+        }
+        &--slide {
+          width: 30%!important;
+          margin-left: 0!important;
+
+          .item {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+
+          }
+        }
+      }
+    }
   }
 
   &__details {
     padding-left: 1rem;
-    &--price {
 
+    &--infoProduct {
+      &--price {
+
+      }
+    }
+
+    &--sizProduct {
+    }
+
+    &--colorProduct {
     }
   }
 }
