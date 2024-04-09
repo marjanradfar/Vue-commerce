@@ -29,7 +29,8 @@
         <hr/>
       </div>
       <div class="product__details--offer">
-        <span>Offer expires in:</span>
+        <span>پیشنهاد در:</span>
+        <CountdownTimer/>
       </div>
       <hr/>
       <div class="product__details--productSize">
@@ -44,7 +45,7 @@
       </div>
       <div class="product__details--WishlistContainer">
         <div class="wishlist">
-          <Button text="علاقه مندی ها" :img-src="Heart" />
+          <Button text="علاقه مندی ها" :img-src="Heart"/>
           <MinusPlusInput/>
         </div>
         <Button text="افزودن به سبد خرید" className="btnAddToCard btnBlack"/>
@@ -57,7 +58,8 @@
 //import components
 import Breadcrumbs from "../components/common/Breadcrumbs.vue";
 import MinusPlusInput from "../components/MinusPlusInput.vue";
-import Button from "../components/common/Button.vue"
+import Button from "../components/common/Button.vue";
+import CountdownTimer from "../components/CountdownTimer.vue"
 
 //import img
 import One from "../assets/image/product/one.png";

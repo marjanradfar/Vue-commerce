@@ -7,13 +7,13 @@
 .largeText {
   //font-size: 6em;
   font-size: 4em;
-  line-height:7vw;
+  line-height: 7vw;
   @include break(991) {
     font-size: 3em;
   }
   @include break(768) {
     font-size: 4em;
-    line-height:9vw;
+    line-height: 9vw;
 
   }
   @include break(480) {
@@ -24,12 +24,12 @@
 }
 
 //According to Figma 54px
-.largeLightText{
+.largeLightText {
 
 }
 
 //According to Figma 40px
-.extraMediumText{
+.extraMediumText {
   font-size: 3.125em;
   @include break(768) {
     font-size: 4.5em;
@@ -41,37 +41,39 @@
 
 //According to Figma 34px
 
-.mediumText{
-
+.mediumText {
+  font-size: 3em;
+  font-weight: 600;
 }
+
 //According to Figma 20px
-.mediumLightText{
+.mediumLightText {
   font-size: 1.6em;
 }
 
 //According to Figma 18px
-.extraSmallText{
+.extraSmallText {
   font-size: 1.125em;
 }
 
 //According to Figma 16px
-.smallText{
+.smallText {
   font-size: 1em;
 
 }
 
 //According to Figma 14px
-.smallLightText{
+.smallLightText {
   font-size: 0.8em;
 }
 
 //color text project
 
-.discountedPrice{
-  color:  $mainTextColor;
+.discountedPrice {
+  color: $mainTextColor;
 }
 
-.originalPrice{
+.originalPrice {
   color: $secondaryTextColor;
 }
 

@@ -1,0 +1,30 @@
+.countdownTimer {
+  display: flex;
+  gap: 16px;
+
+  & > * {
+    line-height: 38px;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .backNumber {
+    width: 60px;
+    height: 60px;
+    background-color: $backgroundItem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: 500;
+  }
+
+  &__days {
+
+  }
+}
