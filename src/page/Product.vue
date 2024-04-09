@@ -1,6 +1,21 @@
 <template>
   <Breadcrumbs class="container"/>
   <div class="product container">
+    <div class="product__img">
+      <!--      <div class="product__img&#45;&#45;swiperImg">-->
+      <!--        <SingleSwiper :data="imgProduct"/>-->
+      <!--        <div class="discountNew">-->
+      <!--          <Button text="جدید" className="btnNew"/>-->
+      <!--          <Button text="-50%" className="btnDiscount"/>-->
+      <!--        </div>-->
+      <!--      </div>-->
+      <!--      <ul class="product__img&#45;&#45;smallImg">-->
+      <!--        <li class="item" v-for="item in imgProduct.smallImg">-->
+      <!--          <img :src="item.img"/>-->
+      <!--        </li>-->
+      <!--      </ul>-->
+      <Thumbs :data="swiperThumbnails"/>
+    </div>
     <div class="product__details">
       <div class="product__details--infoProduct">
         <p class="extraMediumText">میز سینی</p>
@@ -27,45 +42,36 @@
           <img :src="img.img" v-for="img in thumbnails"/>
         </div>
       </div>
-      <div class="product__details--Wishlist">
-        
+      <div class="product__details--WishlistContainer">
+        <div class="wishlist">
+          <Button text="علاقه مندی ها" :img-src="Heart" />
+          <MinusPlusInput/>
+        </div>
+        <Button text="افزودن به سبد خرید" className="btnAddToCard btnBlack"/>
       </div>
     </div>
-
-    <div class="product__img">
-<!--      <div class="product__img&#45;&#45;swiperImg">-->
-<!--        <SingleSwiper :data="imgProduct"/>-->
-<!--        <div class="discountNew">-->
-<!--          <Button text="جدید" className="btnNew"/>-->
-<!--          <Button text="-50%" className="btnDiscount"/>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      <ul class="product__img&#45;&#45;smallImg">-->
-<!--        <li class="item" v-for="item in imgProduct.smallImg">-->
-<!--          <img :src="item.img"/>-->
-<!--        </li>-->
-<!--      </ul>-->
-      <Thumbs :data="swiperThumbnails"/>
-
-    </div>
-
   </div>
 </template>
 <script setup>
+
 //import components
 import Breadcrumbs from "../components/common/Breadcrumbs.vue";
+import MinusPlusInput from "../components/MinusPlusInput.vue";
 import Button from "../components/common/Button.vue"
 
 //import img
-import TrayTable from "../assets/image/product/TrayTable.png";
 import One from "../assets/image/product/one.png";
 import Two from "../assets/image/product/two.png";
 import Three from "../assets/image/product/three.png";
+import TrayTable from "../assets/image/product/TrayTable.png";
+
+//import icon
+import Heart from "../assets/image/icon/heart.svg"
 
 //import img thumbnails
-import  thumb1 from "../assets/image/product/TrayTableBeige.png";
-import  thumb2 from "../assets/image/product/TrayTableBeigeRed.png";
-import  thumb3 from "../assets/image/product/TrayTableBeigeWhite.png";
+import thumb1 from "../assets/image/product/TrayTableBeige.png";
+import thumb2 from "../assets/image/product/TrayTableBeigeRed.png";
+import thumb3 from "../assets/image/product/TrayTableBeigeWhite.png";
 
 //import component
 import Thumbs from "../components/swiperThumbs.vue";
@@ -89,7 +95,7 @@ import Thumbs from "../components/swiperThumbs.vue";
 const swiperThumbnails = {
   spaceBetween: 10,
   navigation: true,
-  pagination:true,
+  pagination: true,
   items: [
     {img: Three},
     {img: Two},
@@ -102,9 +108,9 @@ const swiperThumbnails = {
   ]
 }
 
-const thumbnails =[
-  {img:thumb1},
-  {img:thumb2},
-  {img:thumb3},
+const thumbnails = [
+  {img: thumb1},
+  {img: thumb2},
+  {img: thumb3},
 ]
 </script>
