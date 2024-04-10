@@ -1,46 +1,49 @@
 <template>
   <Breadcrumbs class="container"/>
-  <div class="product container">
-    <div class="product__img">
-      <Thumbs :data="swiperThumbnails"/>
-    </div>
-    <div class="product__details">
-      <div class="product__details--infoProduct">
-        <p class="extraMediumText">میز سینی</p>
-        <p class="smallText">یکی بخرید یا چند تا بخرید و هر فضایی را که می نشینید راحت تر کنید. جابجایی سبک و آسان با
-          رویه سینی قابل جابجایی
-          که برای سرو تنقلات مفید است.</p>
-        <div class="product__details--price">
-          <span class="discountedPrice mediumLightText">199.000</span>
-          <span class="originalPrice mediumLightText">400.00</span>
-        </div>
-        <hr/>
-      </div>
-      <div class="product__details--offer">
-        <span>پیشنهاد در:</span>
-        <CountdownTimer/>
-      </div>
-      <hr/>
-      <div class="product__details--productSize">
-        <span>اندازه گیری ها</span>
-        <span>17 1/2x20 5/8 </span>
-      </div>
-      <div class="product__details--productColor">
-        <span>انتخاب رنگ</span>
-        <div class="nameColor">مشکی</div>
-        <div class="thumbnails">
-          <img :src="img.img" v-for="img in thumbnails"/>
-        </div>
-      </div>
-      <div class="product__details--WishlistContainer">
-        <div class="wishlist">
-          <Button text="علاقه مندی ها" :img-src="Heart"/>
-          <MinusPlusInput/>
-        </div>
-        <Button text="افزودن به سبد خرید" className="btnAddToCard btnBlack"/>
-      </div>
-    </div>
-  </div>
+ <div class="container">
+   <div class="product">
+     <div class="product__img">
+       <Thumbs :data="swiperThumbnails"/>
+     </div>
+     <div class="product__details">
+       <div class="product__details--infoProduct">
+         <p class="extraMediumText">میز سینی</p>
+         <p class="smallText">یکی بخرید یا چند تا بخرید و هر فضایی را که می نشینید راحت تر کنید. جابجایی سبک و آسان با
+           رویه سینی قابل جابجایی
+           که برای سرو تنقلات مفید است.</p>
+         <div class="product__details--price">
+           <span class="discountedPrice mediumLightText">199.000</span>
+           <span class="originalPrice mediumLightText">400.00</span>
+         </div>
+         <hr/>
+       </div>
+       <div class="product__details--offer">
+         <span>پیشنهاد در:</span>
+         <CountdownTimer/>
+       </div>
+       <hr/>
+       <div class="product__details--productSize">
+         <span>اندازه گیری ها</span>
+         <span>17 1/2x20 5/8 </span>
+       </div>
+       <div class="product__details--productColor">
+         <span>انتخاب رنگ</span>
+         <div class="nameColor">مشکی</div>
+         <div class="thumbnails">
+           <img :src="img.img" v-for="img in thumbnails"/>
+         </div>
+       </div>
+       <div class="product__details--WishlistContainer">
+         <div class="wishlist">
+           <Button text="علاقه مندی ها" :img-src="Heart"/>
+           <MinusPlusInput/>
+         </div>
+         <Button text="افزودن به سبد خرید" className="btnAddToCard btnBlack"/>
+       </div>
+     </div>
+   </div>
+   <Tab/>
+ </div>
 </template>
 <script setup>
 
@@ -48,7 +51,8 @@
 import Breadcrumbs from "../components/common/Breadcrumbs.vue";
 import MinusPlusInput from "../components/MinusPlusInput.vue";
 import Button from "../components/common/Button.vue";
-import CountdownTimer from "../components/CountdownTimer.vue"
+import CountdownTimer from "../components/CountdownTimer.vue";
+import Tab from "../components/Tab.vue";
 
 //import img
 import One from "../assets/image/product/one.png";

@@ -25,8 +25,8 @@
     .swiperThumbs {
       &__Thumbs {
         width: 100%;
-        margin-bottom: 5%;
-
+        //margin-bottom: 5%;
+        margin-bottom: 2rem;
         &--slide {
           height: auto;
 
@@ -48,7 +48,7 @@
         }
 
         &--slide {
-          width: 33% !important;
+          width: 31% !important;
           margin-left: 0 !important;
 
           .item {
