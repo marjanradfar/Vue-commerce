@@ -2,18 +2,6 @@
   <Breadcrumbs class="container"/>
   <div class="product container">
     <div class="product__img">
-      <!--      <div class="product__img&#45;&#45;swiperImg">-->
-      <!--        <SingleSwiper :data="imgProduct"/>-->
-      <!--        <div class="discountNew">-->
-      <!--          <Button text="جدید" className="btnNew"/>-->
-      <!--          <Button text="-50%" className="btnDiscount"/>-->
-      <!--        </div>-->
-      <!--      </div>-->
-      <!--      <ul class="product__img&#45;&#45;smallImg">-->
-      <!--        <li class="item" v-for="item in imgProduct.smallImg">-->
-      <!--          <img :src="item.img"/>-->
-      <!--        </li>-->
-      <!--      </ul>-->
       <Thumbs :data="swiperThumbnails"/>
     </div>
     <div class="product__details">
@@ -34,12 +22,13 @@
       </div>
       <hr/>
       <div class="product__details--productSize">
-        Measurements
+        <span>اندازه گیری ها</span>
+        <span>17 1/2x20 5/8 </span>
       </div>
       <div class="product__details--productColor">
-        Choose Color
-        <div class="colorProduct__nameColor">black</div>
-        <div class="colorProduct__thumbnails">
+        <span>انتخاب رنگ</span>
+        <div class="nameColor">مشکی</div>
+        <div class="thumbnails">
           <img :src="img.img" v-for="img in thumbnails"/>
         </div>
       </div>
@@ -78,21 +67,6 @@ import thumb3 from "../assets/image/product/TrayTableBeigeWhite.png";
 //import component
 import Thumbs from "../components/swiperThumbs.vue";
 
-// const imgProduct = {
-//   navigation: true,
-//   pagination: true,
-//   mousewheel: false,
-//   items: [
-//     {img: TrayTable},
-//     {img: TrayTable},
-//     {img: TrayTable},
-//   ],
-//   smallImg: [
-//     {img: Three},
-//     {img: Two},
-//     {img: One},
-//   ]
-// }
 
 const swiperThumbnails = {
   spaceBetween: 10,
@@ -113,6 +87,7 @@ const swiperThumbnails = {
 const thumbnails = [
   {img: thumb1},
   {img: thumb2},
+  {img: thumb3},
   {img: thumb3},
 ]
 </script>
