@@ -12,7 +12,7 @@
     </div>
     <hr/>
     <div class="tab__info">
-      <component :is="currentTab"></component>
+      <component :is="currentTab" ></component>
 
     </div>
   </div>

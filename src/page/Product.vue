@@ -41,9 +41,11 @@
          <Button text="افزودن به سبد خرید" className="btnAddToCard btnBlack"/>
        </div>
      </div>
-   </div>
-   <Tab/>
+   </div>a
+   <Tab :data="dataTab"/>
+
  </div>
+  <Newsletter  :data="dataNewsletter" />
 </template>
 <script setup>
 
@@ -53,15 +55,19 @@ import MinusPlusInput from "../components/MinusPlusInput.vue";
 import Button from "../components/common/Button.vue";
 import CountdownTimer from "../components/CountdownTimer.vue";
 import Tab from "../components/Tab.vue";
+import Newsletter from  "../components/section/Newsletter.vue"
+import Thumbs from "../components/SwiperThumbs.vue";
 
 //import img
 import One from "../assets/image/product/one.png";
 import Two from "../assets/image/product/two.png";
 import Three from "../assets/image/product/three.png";
 import TrayTable from "../assets/image/product/TrayTable.png";
+import Banner from "../assets/image/banner/Newsletter.png";
+import people1 from  "../assets/image/people/people1.png"
 
 //import icon
-import Heart from "../assets/image/icon/heart.svg"
+import Heart from "../assets/image/icon/heart.svg";
 
 //import img thumbnails
 import thumb1 from "../assets/image/product/TrayTableBeige.png";
@@ -69,7 +75,6 @@ import thumb2 from "../assets/image/product/TrayTableBeigeRed.png";
 import thumb3 from "../assets/image/product/TrayTableBeigeWhite.png";
 
 //import component
-import Thumbs from "../components/swiperThumbs.vue";
 
 
 const swiperThumbnails = {
@@ -93,5 +98,21 @@ const thumbnails = [
   {img: thumb2},
   {img: thumb3},
   {img: thumb3},
-]
+];
+
+const dataNewsletter ={
+  img: Banner,
+  title: "به خبرنامه ما بپیوندید",
+  subTitle: "برای معاملات، محصولات جدید و تبلیغات ثبت نام کنید"
+}
+
+const dataTab ={
+  img: people1,
+  peopleName:"مرجان رادفر",
+  action: [
+    {title:"حدود یک ساعت پیش "},
+    {title:"پسندین "},
+    {title:"پاسخ"},
+  ]
+}
 </script>
