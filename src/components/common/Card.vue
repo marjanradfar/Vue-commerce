@@ -1,21 +1,21 @@
 <template>
-  <div class="newArrivals__wrapper--cart">
-    <div class="imgCartContainer">
-      <img class="imgCart" :src="data.imgProduct" />
+  <div class="wrapperCard">
+    <div class="wrapperCard__imgContainer">
+      <img class="wrapperCard__imgContainer--imgCard" :src="data.imgProduct" />
       <div class="discountNew">
         <Button :text="data.btnNew" className="btnNew"/>
         <Button :text="data.btnDiscount" className="btnDiscount"/>
       </div>
       <Button :text="data.btnAddToCard" className="btnAddToCard btnBlack"/>
     </div>
-    <div class="content">
-      <div class="content__rating">
+    <div class="wrapperCard__content">
+      <div class="wrapperCard__content--rating">
         <img :src="rate.imgRating" v-for="(rate , id) in data.rate " :key="id">
       </div>
-      <span class="content__title">{{data.title}}</span>
-      <div class="content__price">
-        <span class="content__price--main smallLightText">{{data.priceMain}}</span>
-        <span class="content__price--off smallLightText">{{data.priceOff}}</span>
+      <span class="wrapperCard__content--title">{{data.title}}</span>
+      <div class="wrapperCard__content--price">
+        <span class="priceMain smallLightText">{{data.priceMain}}</span>
+        <span class="priceOff smallLightText">{{data.priceOff}}</span>
       </div>
     </div>
   </div>
