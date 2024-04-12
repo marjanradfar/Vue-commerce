@@ -12,7 +12,7 @@
 @import "page/home/wrapperCard";
 @import "page/home/header";
 
-//todo: signUp
+//todo: signUp page
 @import "page/signUp";
 
 //todo: Commonly used styles
@@ -21,7 +21,11 @@
 @import "components/input";
 @import "components/minusPlusInput";
 @import "components/countdownTimer";
+@import "components/banner";
 
 //todo: style product page
 @import "page/product";
+
+//todo: blog page
+@import "page/blog";
 

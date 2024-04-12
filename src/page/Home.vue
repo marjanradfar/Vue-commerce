@@ -1,6 +1,6 @@
 <template>
 
-<!--  <Header :data="headerItems"/>-->
+  <!--  <Header :data="headerItems"/>-->
 
   <!--The main body of the  Home page-->
   <main>
@@ -133,7 +133,7 @@
     </section>
 
     <!--section Newsletter-->
-    <Newsletter :data="dataNewsletter"/>
+    <Banner :data="dataNewsletter" className="Newsletter"/>
 
   </main>
 </template>
@@ -141,12 +141,18 @@
 
 //import component
 import SingleSwiper from '../components/SingleSwiper.vue';
-import Header from '../components/common/Header.vue';
-import imgHero from '../assets/image/banner/bannerSwiperHome.png';
 import SwiperCardProgress from "../components/SwiperCardProgress.vue";
-import Newsletter from "../components/section/Newsletter.vue";
+import Banner from "@/components/Banner.vue";
 import ContactSupport from "../components/section/ContactSupport.vue";
 
+
+//import image
+import SingleSofa from "../assets/image/newArrivals/singleSofa.png";
+import DecorHome from "../assets/image/articles/decoreHome.png";
+import DecorBedroom from "../assets/image/articles/decoreBedroom.png";
+import KitchenOrganization from "../assets/image/articles/kitchenOrganization.png";
+import email from "../assets/image/icon/email.svg";
+import imgHero from '../assets/image/banner/bannerSwiperHome.png';
 import BannerNewsletter from '../assets/image/banner/Newsletter.png';
 import Star from '../assets/image/icon/starFill.svg';
 import ArrowLeft from "../assets/image/icon/swiper arrow/arrow-left.svg";
@@ -155,20 +161,12 @@ import Money from "../assets/image/support/money.svg";
 import Lock from "../assets/image/support/lock.svg";
 import Call from "../assets/image/support/call.svg";
 
-
-//import image
-import SingleSofa from "../assets/image/newArrivals/singleSofa.png";
-import DecorHome from "../assets/image/articles/decoreHome.png";
-import DecorBedroom from "../assets/image/articles/decoreBedroom.png";
-import KitchenOrganization from "../assets/image/articles/kitchenOrganization.png";
-
-
 const dataHero = {
-  navigation:true,
-  pagination:true,
-  mousewheel:false,
+  navigation: true,
+  pagination: true,
+  mousewheel: false,
 
-  items:[
+  items: [
     {img: imgHero},
     {img: imgHero},
     {img: imgHero},
@@ -178,15 +176,12 @@ const dataHero = {
 }
 
 
-
-
-
 const dataNewArrivals = {
   name: "dataNewArrivals",
   spaceBetween: 20,
   slidesPerView: 4,
-  mousewheel:false,
-  keyboard:false,
+  mousewheel: false,
+  keyboard: false,
   breakpoints: {
     1880: {
       slidesPerView: 4
@@ -262,8 +257,7 @@ const dataNewArrivals = {
     },
     {
       imgProduct: SingleSofa,
-      btnNew
-          : "جدید",
+      btnNew: "جدید",
       btnDiscount: "- 50%",
       btnAddToCard: "افزودن به سبد خرید",
       rate: [
@@ -363,7 +357,13 @@ const dataNewArrivals = {
 const dataNewsletter = {
   img: BannerNewsletter,
   title: "به خبرنامه ما بپیوندید",
-  subTitle: "برای معاملات، محصولات جدید و تبلیغات ثبت نام کنید"
+  subTitle: "برای معاملات، محصولات جدید و تبلیغات ثبت نام کنید",
+  input: {
+    img: email,
+    type: "email",
+    placeholder: "آدرس ایمیل",
+  },
+  click: "ثبت نام"
 }
 
 const articles = {

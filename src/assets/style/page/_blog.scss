@@ -1,0 +1,16 @@
+.blog {
+  &__containerArticle {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-row-gap: 4rem;
+    grid-column-gap: 2rem;
+
+  }
+
+  .btnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 0;
+  }
+}

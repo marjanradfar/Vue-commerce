@@ -55,7 +55,7 @@ import MinusPlusInput from "../components/MinusPlusInput.vue";
 import Button from "../components/common/Button.vue";
 import CountdownTimer from "../components/CountdownTimer.vue";
 import Tab from "../components/Tab.vue";
-import Newsletter from  "../components/section/Newsletter.vue"
+import Newsletter from "../components/Banner.vue"
 import Thumbs from "../components/SwiperThumbs.vue";
 
 //import img

@@ -1,3 +1,3 @@
 <template>
-  <p> باید اینو طراحی کنم</p>
+  <p> Breadcrumbs</p>
 </template>
