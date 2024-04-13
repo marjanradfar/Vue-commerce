@@ -5,6 +5,7 @@
       <div class="banner__content--title">
         <h1 class="extraMediumText">{{ data.title }}</h1>
         <p class="extraSmallText">{{ data.subTitle }}</p>
+        <Breadcrumbs :data="data.breadcrumbs" v-if="data.breadcrumbs"/>
       </div>
       <div class="banner__content--input">
         <Input :data="data.input" className="email" v-if="data.input"/>
@@ -19,7 +20,7 @@
 
 //import components
 import Input from "@/components/common/Input.vue";
-
+import Breadcrumbs from "@/components/common/Breadcrumbs.vue";
 const props = defineProps(["data", "className"]);
 
 </script>

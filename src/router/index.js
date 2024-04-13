@@ -3,6 +3,7 @@ import Home from "@/page/Home.vue";
 import Product from "@/page/Product.vue";
 import SignUp from "@/page/SignUp.vue";
 import Blog from "@/page/Blog.vue";
+import Shop from "@/page/Shop.vue";
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -39,6 +40,12 @@ const router = createRouter({
             path: "/blog",
             name: "blog",
             component: Blog,
+
+        },
+        {
+            path: "/shop",
+            name: "shop",
+            component: Shop,
 
         },
     ],

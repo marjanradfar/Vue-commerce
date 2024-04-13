@@ -2,7 +2,6 @@
   <div class="blog">
     <div class="container">
       <Banner :data="bannerBlog"/>
-      <div>tabs</div>
       <div class="blog__containerArticle">
         <Card :data="data" v-for="(data , index) in article" :key="index"/>
       </div>
@@ -78,6 +77,10 @@ const bannerBlog = {
   img: BannerBlog,
   title:"وبلاگ",
   subTitle:"ایده های خانه و الهام از طراحی",
+  breadcrumbs: [
+    { label: 'صفحه اصلی', path: '/' },
+    { label: 'محصول', path: '/Product' },
+  ]
 }
 
 const dataNewsletter = {
