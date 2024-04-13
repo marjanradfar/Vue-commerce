@@ -25,7 +25,6 @@
     .swiperThumbs {
       &__Thumbs {
         width: 100%;
-        //margin-bottom: 5%;
         margin-bottom: 2rem;
         &--slide {
           height: auto;
@@ -66,12 +65,16 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-
+    //justify-content: space-between;
+    gap: 24px;
+    &--price{
+      display: flex;
+      gap: 1rem;
+    }
     &--offer {
 
-      .countdownTimer {
-      }
+      //.countdownTimer {
+      //}
     }
 
     &--WishlistContainer {

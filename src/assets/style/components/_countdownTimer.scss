@@ -1,6 +1,7 @@
 .countdownTimer {
   display: flex;
-  gap: 16px;
+  //gap: 16px;
+  gap: 3%;
 
   & > * {
     line-height: 38px;
@@ -20,7 +21,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 500;
   }
 
