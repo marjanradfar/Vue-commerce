@@ -1,5 +1,5 @@
 <template>
-  <Breadcrumbs class="container"/>
+  <Breadcrumbs class="container" :data="dataBreadcrumb"/>
  <div class="container">
    <div class="product">
      <div class="product__img">
@@ -41,7 +41,7 @@
          <Button text="افزودن به سبد خرید" className="btnAddToCard btnBlack"/>
        </div>
      </div>
-   </div>a
+   </div>
    <Tab :data="dataTab"/>
 
  </div>
@@ -68,7 +68,8 @@ import people1 from  "../assets/image/people/people1.png"
 
 //import icon
 import Heart from "../assets/image/icon/heart.svg";
-import Email from "../assets/image/icon/email.svg"
+import Email from "../assets/image/icon/email.svg";
+
 //import img thumbnails
 import thumb1 from "../assets/image/product/TrayTableBeige.png";
 import thumb2 from "../assets/image/product/TrayTableBeigeRed.png";
@@ -77,6 +78,7 @@ import email from "@/assets/image/icon/email.svg";
 
 //import component
 
+//import data
 
 const swiperThumbnails = {
   spaceBetween: 10,
@@ -123,5 +125,12 @@ const dataTab ={
     {title:"پسندین "},
     {title:"پاسخ"},
   ]
+}
+
+const dataBreadcrumb={
+  breadcrumbs: [
+        { label: 'صفحه اصلی', path: '/' },
+        { label: 'محصول', path: '/Product' },
+      ]
 }
 </script>
