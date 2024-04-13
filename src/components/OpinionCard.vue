@@ -1,7 +1,6 @@
 <template>
   <div class="opinionContainer">
     <div class="pinionContainer__img">
-      <!--      <img src="../assets/image/people/people1.png">-->
       <img :src="data.img">
     </div>
     <div class="opinionContainer__opinions">
@@ -14,9 +13,6 @@
       </p>
       <div class="opinionContainer__opinions--action">
         <span class="releaseTime" v-for="(item , index) in data.action">{{item.title}}</span>
-<!--        <span class="releaseTime">حدود 1 ساعت پیش</span>-->
-<!--        <span class="like">پسندیدن</span>-->
-<!--        <span class="reply">پاسخ</span>-->
       </div>
     </div>
   </div>
@@ -31,11 +27,23 @@ const props = defineProps(["data"]);
 .opinionContainer {
   display: flex;
   gap: 40px;
-
+  //margin-bottom: 24px;
   &__opinions {
+
+    border-bottom: 1px solid red;
+    &--head{
+      display: flex;
+      align-content: center;
+      flex-direction: column;
+      gap: 16px;
+    }
+    &--text{
+      margin-bottom: 24px;
+    }
     &--action {
       display: flex;
       gap: 1.5rem;
+      margin-bottom: 24px;
     }
   }
 }

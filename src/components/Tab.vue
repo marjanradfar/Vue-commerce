@@ -69,7 +69,7 @@ export default {
   &__info {
     display: flex;
     gap: 1rem;
-    margin-top: 10px;
+    //margin-top: 10px;
 
   }
 }

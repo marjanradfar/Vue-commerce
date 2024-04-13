@@ -68,11 +68,12 @@ import people1 from  "../assets/image/people/people1.png"
 
 //import icon
 import Heart from "../assets/image/icon/heart.svg";
-
+import Email from "../assets/image/icon/email.svg"
 //import img thumbnails
 import thumb1 from "../assets/image/product/TrayTableBeige.png";
 import thumb2 from "../assets/image/product/TrayTableBeigeRed.png";
 import thumb3 from "../assets/image/product/TrayTableBeigeWhite.png";
+import email from "@/assets/image/icon/email.svg";
 
 //import component
 
@@ -103,7 +104,15 @@ const thumbnails = [
 const dataNewsletter ={
   img: Banner,
   title: "به خبرنامه ما بپیوندید",
-  subTitle: "برای معاملات، محصولات جدید و تبلیغات ثبت نام کنید"
+  subTitle: "برای معاملات، محصولات جدید و تبلیغات ثبت نام کنید",
+  input: {
+    img: Email,
+    type: "email",
+    placeholder: "آدرس ایمیل",
+  },
+  click: "ثبت نام"
+
+
 }
 
 const dataTab ={
