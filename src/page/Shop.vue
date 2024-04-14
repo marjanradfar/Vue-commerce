@@ -1,9 +1,12 @@
 <template>
   <div class="shop container">
     <Banner :data="dataBannerShop"/>
-    <div class="containerSingleSelect">
+    <div class="shop__containerSingleSelect">
       <SingleSelect :data="dataCategories"/>
       <SingleSelect :data="dataPrice"/>
+    </div>
+    <div class="shop__products">
+      <Card :data="data" v-for="(data , index) in dataShopProducts " :key="index"/>
     </div>
   </div>
 </template>
@@ -13,11 +16,16 @@
 
 //import components
 import Banner from "@/components/Banner.vue";
-
+import Card from "@/components/common/Card.vue";
+import SingleSelect from "@/components/common/SingleSelect.vue";
 
 //import img
 import BannerShop from "../assets/image/banner/bannerShop.png"
-import SingleSelect from "@/components/common/SingleSelect.vue";
+import SingleSofa from "../assets/image/products/singleSofa.png"
+
+//import icon
+import star from "../assets/image/icon/starFill.svg"
+import Star from "@/assets/image/icon/starFill.svg";
 
 //import data
 const dataBannerShop = {
@@ -43,7 +51,7 @@ const dataCategories = {
 const dataPrice ={
   title:"قیمت ها",
   SingleSelect:[
-    {option:"1000"},
+    {option:"همه قیمت ها"},
     {option:"2000"},
     {option:"3000"},
     {option:"4000"},
@@ -54,4 +62,199 @@ const dataPrice ={
   ]
 }
 
+const dataShopProducts =[
+  {
+    imgProduct:SingleSofa,
+    btnNew:"جدید",
+    btnDiscount:"-50%",
+    btnAddToCard:"افزوردن به سبد خرید",
+    rate: [
+      {imgRating: Star},
+      {imgRating: Star},
+      {imgRating: Star},
+      {imgRating: Star},
+      {imgRating: Star},
+    ],
+    title:"مبل صندلی عشق",
+    priceMain:"$400.00",
+    priceOff:"$199.00",
+  },
+  {
+    imgProduct:SingleSofa,
+    btnNew:"جدید",
+    btnDiscount:"-50%",
+    btnAddToCard:"افزوردن به سبد خرید",
+    rate: [
+      {imgRating: Star},
+      {imgRating: Star},
+      {imgRating: Star},
+      {imgRating: Star},
+      {imgRating: Star},
+    ],
+    title:"مبل صندلی عشق",
+    priceMain:"$400.00",
+    priceOff:"$199.00",
+  },
+  {
+    imgProduct:SingleSofa,
+    btnNew:"جدید",
+    btnDiscount:"-50%",
+    btnAddToCard:"افزوردن به سبد خرید",
+    rate: [
+      {imgRating: Star},
+      {imgRating: Star},
+      {imgRating: Star},
+      {imgRating: Star},
+      {imgRating: Star},
+    ],
+    title:"مبل صندلی عشق",
+    priceMain:"$400.00",
+    priceOff:"$199.00",
+  },
+  {
+    imgProduct:SingleSofa,
+    btnNew:"جدید",
+    btnDiscount:"-50%",
+    btnAddToCard:"افزوردن به سبد خرید",
+    rate: [
+      {imgRating: Star},
+      {imgRating: Star},
+      {imgRating: Star},
+      {imgRating: Star},
+      {imgRating: Star},
+    ],
+    title:"مبل صندلی عشق",
+    priceMain:"$400.00",
+    priceOff:"$199.00",
+  },
+  {
+    imgProduct:SingleSofa,
+    btnNew:"جدید",
+    btnDiscount:"-50%",
+    btnAddToCard:"افزوردن به سبد خرید",
+    rate: [
+      {imgRating: Star},
+      {imgRating: Star},
+      {imgRating: Star},
+      {imgRating: Star},
+      {imgRating: Star},
+    ],
+    title:"مبل صندلی عشق",
+    priceMain:"$400.00",
+    priceOff:"$199.00",
+  },
+  {
+    imgProduct:SingleSofa,
+    btnNew:"جدید",
+    btnDiscount:"-50%",
+    btnAddToCard:"افزوردن به سبد خرید",
+    rate: [
+      {imgRating: Star},
+      {imgRating: Star},
+      {imgRating: Star},
+      {imgRating: Star},
+      {imgRating: Star},
+    ],
+    title:"مبل صندلی عشق",
+    priceMain:"$400.00",
+    priceOff:"$199.00",
+  },
+  {
+    imgProduct:SingleSofa,
+    btnNew:"جدید",
+    btnDiscount:"-50%",
+    btnAddToCard:"افزوردن به سبد خرید",
+    rate: [
+      {imgRating: Star},
+      {imgRating: Star},
+      {imgRating: Star},
+      {imgRating: Star},
+      {imgRating: Star},
+    ],
+    title:"مبل صندلی عشق",
+    priceMain:"$400.00",
+    priceOff:"$199.00",
+  },
+  {
+    imgProduct:SingleSofa,
+    btnNew:"جدید",
+    btnDiscount:"-50%",
+    btnAddToCard:"افزوردن به سبد خرید",
+    rate: [
+      {imgRating: Star},
+      {imgRating: Star},
+      {imgRating: Star},
+      {imgRating: Star},
+      {imgRating: Star},
+    ],
+    title:"مبل صندلی عشق",
+    priceMain:"$400.00",
+    priceOff:"$199.00",
+  },
+  {
+    imgProduct:SingleSofa,
+    btnNew:"جدید",
+    btnDiscount:"-50%",
+    btnAddToCard:"افزوردن به سبد خرید",
+    rate: [
+      {imgRating: Star},
+      {imgRating: Star},
+      {imgRating: Star},
+      {imgRating: Star},
+      {imgRating: Star},
+    ],
+    title:"مبل صندلی عشق",
+    priceMain:"$400.00",
+    priceOff:"$199.00",
+  },
+  {
+    imgProduct:SingleSofa,
+    btnNew:"جدید",
+    btnDiscount:"-50%",
+    btnAddToCard:"افزوردن به سبد خرید",
+    rate: [
+      {imgRating: Star},
+      {imgRating: Star},
+      {imgRating: Star},
+      {imgRating: Star},
+      {imgRating: Star},
+    ],
+    title:"مبل صندلی عشق",
+    priceMain:"$400.00",
+    priceOff:"$199.00",
+  },
+  {
+    imgProduct:SingleSofa,
+    btnNew:"جدید",
+    btnDiscount:"-50%",
+    btnAddToCard:"افزوردن به سبد خرید",
+    rate: [
+      {imgRating: Star},
+      {imgRating: Star},
+      {imgRating: Star},
+      {imgRating: Star},
+      {imgRating: Star},
+    ],
+    title:"مبل صندلی عشق",
+    priceMain:"$400.00",
+    priceOff:"$199.00",
+  },
+  {
+    imgProduct:SingleSofa,
+    btnNew:"جدید",
+    btnDiscount:"-50%",
+    btnAddToCard:"افزوردن به سبد خرید",
+    rate: [
+      {imgRating: Star},
+      {imgRating: Star},
+      {imgRating: Star},
+      {imgRating: Star},
+      {imgRating: Star},
+    ],
+    title:"مبل صندلی عشق",
+    priceMain:"$400.00",
+    priceOff:"$199.00",
+  },
+
+]
 </script>

@@ -1,6 +1,19 @@
-.shop{
-  .containerSingleSelect{
+.shop {
+  &__containerSingleSelect {
     display: flex;
     gap: 24px;
+    margin-top: 60px;
+  }
+
+  &__products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2%;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    @include  break(768){
+      grid-template-columns: 1fr 1fr;
+
+    }
   }
 }

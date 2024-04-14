@@ -18,15 +18,27 @@ onMounted(() => {
   }
 });
 
+
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+@import "../../assets/style/base/variable.scss";
 .SingleSelect{
   display: flex;
   flex-direction: column;
   width: 262px;
+  gap: 6px;
   &__container{
     width: 100%;
+    height: 3rem;
+    border-radius: 8px;
+    padding: 14px 16px 14px 16px;
+    border: 2px solid $secondaryTextColor;
+    font-family: "Pinar";
+
+    background: url("../../assets/image/icon/arrowDown.svg") no-repeat left ;
+    -webkit-appearance: none;
+    background-position-x: 10px;
   }
 }
 </style>
