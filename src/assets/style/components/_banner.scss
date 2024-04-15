@@ -22,6 +22,7 @@
   }
 
   &__content {
+    width: 100%;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -53,7 +54,6 @@
       align-items: center;
       margin-top: 8%;
       width: 100%;
-      //border-bottom: 1px solid $secondaryTextColor;
       padding-bottom: 2%;
 
 
@@ -72,9 +72,7 @@
           border: none;
           background-color: transparent;
           font-size: 1em;
-          //padding: 4% 10% 4% 10%;
           padding-right: 12%;
-
           font-family: "pinar";
 
           &::placeholder {
@@ -105,10 +103,14 @@
 .bannerImg {
   background-color: transparent;
   padding: 0;
+  @include break(480) {
+  height: 16vh;
+  }
 
   .back {
     @include break(480) {
       display: flex;
+      height: 100%;
     }
   }
 

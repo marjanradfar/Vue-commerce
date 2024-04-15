@@ -2,10 +2,11 @@
   <div class="banner" :class="className">
     <img :src="data.img" class="back">
     <div class="banner__content">
+      <Breadcrumbs :data="data.breadcrumbs" v-if="!!data.breadcrumbs?.length"/>
+
       <div class="banner__content--title">
         <h1 class="extraMediumText">{{ data.title }}</h1>
         <p class="extraSmallText">{{ data.subTitle }}</p>
-        <Breadcrumbs :data="data.breadcrumbs" v-if="data.breadcrumbs"/>
       </div>
       <div class="banner__content--input">
         <Input :data="data.input" className="email" v-if="data.input"/>

@@ -38,7 +38,11 @@ import Button from "@/components/common/Button.vue";
 const dataBannerShop = {
   img: BannerShop,
   title:"فروشگاه",
-  subTitle:"بیایید مکانی را که همیشه تصور می کردید طراحی کنیم."
+  subTitle:"بیایید مکانی را که همیشه تصور می کردید طراحی کنیم.",
+  breadcrumbs: [
+    { label: 'صفحه اصلی', path: '/' },
+    { label: 'فروشگاه', path: '/shop' },
+  ]
 };
 
 const dataCategories = {
@@ -276,5 +280,6 @@ const dataNewsletter = {
   },
   click: "ثبت نام"
 }
+
 
 </script>

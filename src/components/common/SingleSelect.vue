@@ -1,6 +1,6 @@
 <template>
   <div class="SingleSelect">
-    <span> {{ data.title }}</span>
+    <span class="mediumLightText "> {{ data.title }}</span>
     <select v-model="selected" class="SingleSelect__container">
       <option v-for="(item , index) in data.SingleSelect" :key="index">{{ item.option }}</option>
     </select>

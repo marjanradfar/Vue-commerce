@@ -79,7 +79,7 @@ const dataBannerBlog = {
   subTitle:"ایده های خانه و الهام از طراحی",
   breadcrumbs: [
     { label: 'صفحه اصلی', path: '/' },
-    { label: 'محصول', path: '/Product' },
+    { label: 'وبلاگ', path: '/blog' },
   ]
 }
 
