@@ -1,16 +1,20 @@
 <template>
-  <div class="shop container">
-    <Banner :data="dataBannerShop"/>
-    <div class="shop__containerSingleSelect">
-      <SingleSelect :data="dataCategories"/>
-      <SingleSelect :data="dataPrice"/>
-    </div>
-    <div class="shop__products">
-      <Card :data="data" v-for="(data , index) in dataShopProducts " :key="index"/>
-    </div>
+  <div class="shop ">
+   <div class="container">
+     <Banner :data="dataBannerShop" className="bannerImg"/>
+     <div class="shop__containerSingleSelect">
+       <SingleSelect :data="dataCategories"/>
+       <SingleSelect :data="dataPrice"/>
+     </div>
+     <div class="shop__products">
+       <Card :data="data" v-for="(data , index) in dataShopProducts " :key="index"/>
+     </div>
+     <Button text="مشاهده بیشتر"className="btnShowMore" />
+
+   </div>
+    <Banner :data="dataNewsletter" className="Newsletter"/>
   </div>
 </template>
-
 
 <script setup>
 
@@ -26,6 +30,9 @@ import SingleSofa from "../assets/image/products/singleSofa.png"
 //import icon
 import star from "../assets/image/icon/starFill.svg"
 import Star from "@/assets/image/icon/starFill.svg";
+import Newsletter from "@/assets/image/banner/Newsletter.png";
+import email from "@/assets/image/icon/email.svg";
+import Button from "@/components/common/Button.vue";
 
 //import data
 const dataBannerShop = {
@@ -60,7 +67,7 @@ const dataPrice ={
     {option:"7000 "},
     {option:"8000 "},
   ]
-}
+};
 
 const dataShopProducts =[
   {
@@ -256,5 +263,18 @@ const dataShopProducts =[
     priceOff:"$199.00",
   },
 
-]
+];
+
+const dataNewsletter = {
+  img: Newsletter,
+  title: "به خبرنامه ما بپیوندید",
+  subTitle: "برای معاملات، محصولات جدید و تبلیغات ثبت نام کنید",
+  input: {
+    img: email,
+    type: "email",
+    placeholder: "آدرس ایمیل",
+  },
+  click: "ثبت نام"
+}
+
 </script>

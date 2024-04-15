@@ -96,8 +96,24 @@
   }
 }
 
-.Newsletter{
-  .banner__content--input{
+.Newsletter {
+  .banner__content--input {
     border-bottom: 1px solid $secondaryTextColor;
   }
+}
+
+.bannerImg {
+  background-color: transparent;
+  padding: 0;
+
+  .back {
+    @include break(480) {
+      display: flex;
+    }
+  }
+
+  .banner__content {
+    position: absolute;
+  }
+
 }

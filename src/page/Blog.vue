@@ -1,20 +1,20 @@
 <template>
   <div class="blog">
     <div class="container">
-      <BannerBlog :data="dataBannerBlog"/>
+      <Banner :data="dataBannerBlog" className="bannerImg"/>
       <div class="blog__containerArticle">
         <Card :data="data" v-for="(data , index) in article" :key="index"/>
       </div>
       <Button text="مشاهده بیشتر" className="btnShowMore"/>
     </div>
-    <BannerNewsletter :data="dataNewsletter" className="Newsletter"/>
+    <Banner :data="dataNewsletter" className="Newsletter"/>
     </div>
 </template>
 
 <script setup>
 
 //import components
-import BannerNewsletter from "@/components/Banner.vue";
+import Banner from "@/components/Banner.vue";
 import Card from "@/components/common/Card.vue";
 import Button from "@/components/common/Button.vue";
 
