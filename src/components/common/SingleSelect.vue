@@ -8,7 +8,8 @@
 </template>
 
 <script setup>
-import {ref  , onMounted} from 'vue';
+import {ref, onMounted} from 'vue';
+
 const props = defineProps(["data", "className"]);
 const selected = ref('');
 
@@ -23,20 +24,22 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 @import "../../assets/style/base/variable.scss";
-.SingleSelect{
+
+.SingleSelect {
   display: flex;
   flex-direction: column;
   width: 262px;
   gap: 6px;
-  &__container{
+  border: 2px solid $secondaryTextColor;
+  border-radius: 8px;
+
+  &__container {
     width: 100%;
     height: 3rem;
-    border-radius: 8px;
     padding: 14px 16px 14px 16px;
-    border: 2px solid $secondaryTextColor;
     font-family: "Pinar";
-
-    background: url("../../assets/image/icon/arrowDown.svg") no-repeat left ;
+    border: none;
+    background: url("../../assets/image/icon/arrowDown.svg") no-repeat left;
     -webkit-appearance: none;
     background-position-x: 10px;
   }

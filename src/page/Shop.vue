@@ -3,22 +3,34 @@
     <div class="container">
       <Banner :data="dataBannerShop" className="bannerImg"/>
       <div class="shop__head">
-<!--        <SingleSelect :data="dataCategories"/>-->
-<!--        <SingleSelect :data="dataPrice"/>-->
-        <h3 class="shop__head--title">همه اتاق ها</h3>
-        <div class="shop__head--sort">
-          <SingleSelect :data="dataSort"/>
-          <div class="sortDisplay">
-            <img :src="icon.img" v-for="(icon , index)  in sortDisplay" :key="index"/>
-          </div>
-        </div>
-        <Button text="فیلتر" :imgSrc=filterIcon className="btnFilter" @click="toggleFilter"/>
+        <!--        <SingleSelect :data="dataCategories"/>-->
+        <!--        <SingleSelect :data="dataPrice"/>-->
+        <!--        <h3 class="shop__head&#45;&#45;title">همه اتاق ها</h3>-->
+        <!--        <div class="shop__head&#45;&#45;sort">-->
+        <!--          <SingleSelect :data="dataSort" className="selectSort"/>-->
+        <!--          <div class="sortDisplay">-->
+        <!--            <img :src="icon.img" v-for="(icon , index)  in sortDisplay" :key="index"/>-->
+        <!--          </div>-->
+        <!--        </div>-->
+        <!--        <Button text="فیلتر" :imgSrc=filterIcon className="btnFilter" @click="toggleFilter"/>-->
       </div>
       <Filter v-if="isOpen" class="filterOpen"/>
       <div class="shop__products">
-        <Filter />
+        <Filter/>
         <div class="shop__products--item">
-          <Card :data="data" v-for="(data , index) in dataShopProducts " :key="index "/>
+          <div class="itemHead">
+            <h3 class="itemHead__title">همه اتاق ها</h3>
+            <div class="itemHead__sort">
+              <SingleSelect :data="dataSort" className="selectSort"/>
+              <div class="sortDisplay">
+                <img :src="icon.img" v-for="(icon , index)  in sortDisplay" :key="index"/>
+              </div>
+            </div>
+            <Button text="فیلتر" :imgSrc=filterIcon className="btnFilter" @click="toggleFilter"/>
+          </div>
+          <div class="itemProducts">
+            <Card :data="data" v-for="(data , index) in dataShopProducts " :key="index "/>
+          </div>
         </div>
       </div>
       <Button text="مشاهده بیشتر" className="btnShowMore"/>
@@ -299,7 +311,7 @@ const dataNewsletter = {
 }
 
 // open component filter
-import { ref } from 'vue';
+import {ref} from 'vue';
 
 const isOpen = ref(false);
 const toggleFilter = () => {
@@ -308,7 +320,7 @@ const toggleFilter = () => {
 
 
 // import data sort
-const dataSort ={
+const dataSort = {
   SingleSelect: [
     {option: "مرتب سازی"},
     {option: "همه اتاق ها"},
@@ -318,10 +330,10 @@ const dataSort ={
 }
 
 
-const sortDisplay= [
-  {img:Tollbar1},
-  {img:Tollbar1},
-  {img:Tollbar1},
+const sortDisplay = [
+  {img: Tollbar1},
+  {img: Tollbar1},
+  {img: Tollbar1},
   {img: Tollbar1},
 ]
 
