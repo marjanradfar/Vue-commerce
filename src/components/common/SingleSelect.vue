@@ -1,6 +1,6 @@
 <template>
-  <div class="SingleSelect">
-    <span class="mediumLightText "> {{ data.title }}</span>
+  <div class="SingleSelect" :class="className">
+    <span class="mediumLightText" v-if="data.title"> {{ data.title }}</span>
     <select v-model="selected" class="SingleSelect__container">
       <option v-for="(item , index) in data.SingleSelect" :key="index">{{ item.option }}</option>
     </select>
@@ -9,7 +9,7 @@
 
 <script setup>
 import {ref  , onMounted} from 'vue';
-const props = defineProps(["data"]);
+const props = defineProps(["data", "className"]);
 const selected = ref('');
 
 onMounted(() => {
