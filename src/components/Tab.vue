@@ -46,9 +46,7 @@ export default {
 </script>
 
 <style lang="scss">
-.active {
-  background-color: #f0f0f0;
-}
+
 
 .tab {
   display: flex;

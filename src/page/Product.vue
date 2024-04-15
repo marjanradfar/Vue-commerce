@@ -18,20 +18,24 @@
          <hr/>
        </div>
        <div class="product__details--offer">
-         <span>پیشنهاد در:</span>
+         <span class="extraSmallText">پیشنهاد در:</span>
          <CountdownTimer/>
        </div>
        <hr/>
        <div class="product__details--productSize">
-         <span>اندازه گیری ها</span>
-         <span>17 1/2x20 5/8 </span>
+         <span class="extraSmallText">اندازه گیری ها</span>
+         <span class="extraSmallText">17 1/2x20 5/8 </span>
        </div>
+       <hr />
        <div class="product__details--productColor">
-         <span>انتخاب رنگ</span>
-         <div class="nameColor">مشکی</div>
+
+         <span class="extraSmallText">انتخاب رنگ</span>
+
+         <div class="nameColor extraSmallText">{{ selectedColorName }}</div>
          <div class="thumbnails">
-           <img :src="img.img" v-for="img in thumbnails"/>
+           <img :src="img.img" v-for="img in thumbnails" :key="img.name" :style="{ border: selectedColorName === img.name ? '2px solid #141718' : 'none' }" @click="selectImg(img.name)"/>
          </div>
+
        </div>
        <div class="product__details--WishlistContainer">
          <div class="wishlist">
@@ -45,7 +49,7 @@
    <Tab :data="dataTab"/>
 
  </div>
-  <Newsletter  :data="dataNewsletter" />
+  <BannerNewsletter  :data="dataNewsletter" className="Newsletter"/>
 </template>
 <script setup>
 
@@ -55,7 +59,7 @@ import MinusPlusInput from "../components/MinusPlusInput.vue";
 import Button from "../components/common/Button.vue";
 import CountdownTimer from "../components/CountdownTimer.vue";
 import Tab from "../components/Tab.vue";
-import Newsletter from "../components/Banner.vue"
+import BannerNewsletter from "../components/Banner.vue"
 import Thumbs from "../components/SwiperThumbs.vue";
 
 //import img
@@ -78,7 +82,7 @@ import email from "@/assets/image/icon/email.svg";
 
 //import component
 
-//import data
+//import data productColor
 
 const swiperThumbnails = {
   spaceBetween: 10,
@@ -96,12 +100,19 @@ const swiperThumbnails = {
   ]
 }
 
+//import data
+const selectedColorName = ref('');
+
 const thumbnails = [
-  {img: thumb1},
-  {img: thumb2},
-  {img: thumb3},
-  {img: thumb3},
+  {name:"بژ",img: thumb1 , color:"بژ"},
+  {name:"قرمز",img: thumb2 , color:"قرمز"},
+  {name:"سفید",img: thumb3 , color:"سفید"},
 ];
+
+const selectImg = (name) => {
+  selectedColorName.value = name;
+};
+//
 
 const dataNewsletter ={
   img: Banner,
@@ -133,4 +144,7 @@ const dataBreadcrumb={
         { label: 'محصول', path: '/Product' },
       ]
 }
+import { ref } from 'vue';
+
+
 </script>
