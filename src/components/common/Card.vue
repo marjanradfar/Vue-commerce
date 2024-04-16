@@ -8,7 +8,7 @@
       </div>
       <Button :text="data.btnAddToCard" className="btnAddToCard btnBlack" v-if="!!data.btnAddToCard"/>
     </div>
-    <div class="wrapperCard__content mediumLightText ">
+    <div class="wrapperCard__content ">
       <div class="wrapperCard__content--rating">
         <img :src="rate.imgRating" v-for="(rate , id) in data.rate " :key="id" v-if="!!data.rate">
       </div>

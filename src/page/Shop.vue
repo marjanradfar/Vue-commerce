@@ -3,37 +3,24 @@
     <div class="container">
       <Banner :data="dataBannerShop" className="bannerImg"/>
       <div class="shop__head">
-        <!--        <SingleSelect :data="dataCategories"/>-->
-        <!--        <SingleSelect :data="dataPrice"/>-->
-        <!--        <h3 class="shop__head&#45;&#45;title">همه اتاق ها</h3>-->
-        <!--        <div class="shop__head&#45;&#45;sort">-->
-        <!--          <SingleSelect :data="dataSort" className="selectSort"/>-->
-        <!--          <div class="sortDisplay">-->
-        <!--            <img :src="icon.img" v-for="(icon , index)  in sortDisplay" :key="index"/>-->
-        <!--          </div>-->
-        <!--        </div>-->
-        <!--        <Button text="فیلتر" :imgSrc=filterIcon className="btnFilter" @click="toggleFilter"/>-->
+        <!--                <SingleSelect :data="dataCategories"/>-->
+        <!--                <SingleSelect :data="dataPrice"/>-->
+        <!--                <h3 class="shop__head&#45;&#45;title">همه اتاق ها</h3>-->
       </div>
-      <Filter v-if="isOpen" class="filterOpen"/>
       <div class="shop__products">
         <Filter/>
         <div class="shop__products--item">
-          <div class="itemHead">
-            <h3 class="itemHead__title">همه اتاق ها</h3>
-            <div class="itemHead__sort">
-              <SingleSelect :data="dataSort" className="selectSort"/>
-              <div class="sortDisplay">
-                <img :src="icon.img" v-for="(icon , index)  in sortDisplay" :key="index"/>
-              </div>
-            </div>
-            <Button text="فیلتر" :imgSrc=filterIcon className="btnFilter" @click="toggleFilter"/>
-          </div>
+          <Sort/>
           <div class="itemProducts">
-            <Card :data="data" v-for="(data , index) in dataShopProducts " :key="index "/>
+            <div class="itemProducts__container">
+              <Card :data="data" v-for="(data , index) in dataShopProducts " :key="index "/>
+            </div>
+            <Button text="مشاهده بیشتر" className="btnShowMore"/>
+
           </div>
+
         </div>
       </div>
-      <Button text="مشاهده بیشتر" className="btnShowMore"/>
 
     </div>
     <Banner :data="dataNewsletter" className="Newsletter"/>
@@ -49,7 +36,7 @@ import Card from "@/components/common/Card.vue";
 import SingleSelect from "@/components/common/SingleSelect.vue";
 import Button from "@/components/common/Button.vue";
 import Filter from "@/components/Filter.vue";
-
+import Sort from "@/components/Sort.vue"
 //import img
 import BannerShop from "../assets/image/banner/bannerShop.png"
 import SingleSofa from "../assets/image/products/singleSofa.png"
@@ -309,14 +296,6 @@ const dataNewsletter = {
   },
   click: "ثبت نام"
 }
-
-// open component filter
-import {ref} from 'vue';
-
-const isOpen = ref(false);
-const toggleFilter = () => {
-  isOpen.value = !isOpen.value;
-};
 
 
 // import data sort

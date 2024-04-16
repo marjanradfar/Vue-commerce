@@ -1,7 +1,20 @@
 
 .wrapperCard {
+  &:hover {
+    filter: drop-shadow(0 1px 13px rgba(0, 0, 0, .2));
+    .btnAddToCard {
+      display: block;
+
+    }
+  }
+
   &__imgContainer {
     position: relative;
+
+
+    .btnAddToCard {
+      display: none;
+    }
 
     &--imgCard {
       width: 100%;
@@ -16,6 +29,8 @@
     align-items: flex-start;
     //font-size: 1.2em;
     width: 100%;
+
+
 
     span {
       font-weight: 600;

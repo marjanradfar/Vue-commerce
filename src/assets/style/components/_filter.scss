@@ -1,35 +1,41 @@
 .filter {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
 
-  &__head {
+  &__title {
     display: flex;
     align-items: center;
     gap: 1rem;
-
+    margin-bottom: 32px;
     img {
       //width: 16%;
     }
   }
 
-  &__categories {
-    &--title {
-      margin-bottom: 1rem;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    row-gap: 32px;
+
+    &--categories {
+      .title {
+        margin-bottom: 1rem;
+      }
+
+      .item {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
     }
 
-    &--item {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-  }
-
-  &__price {
-    &--item {
-      display: flex;
-      flex-direction: column;
-     gap: 12px;
+    &--price {
+      .item {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
     }
   }
 }

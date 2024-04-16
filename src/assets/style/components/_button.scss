@@ -3,6 +3,8 @@ btnContainer {
 }
 
 .btn {
+  width: 100%;
+  height: 100%;
   font-family: "pinar";
   border: none;
   border-radius: 4px;
@@ -38,8 +40,8 @@ btnContainer {
 
 .btnNew,
 .btnDiscount {
-  width: 5rem;
-  height: 2rem;
+  width: 67px;
+  height: 24px;
   font-size: 1.125em;
   @include break(991) {
     width: 3rem;
@@ -88,7 +90,7 @@ btnContainer {
 }
 
 .btnFilter{
-  display: none;
+  //display: none;
 
 }
 

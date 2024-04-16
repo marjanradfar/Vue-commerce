@@ -1,26 +1,28 @@
 <template>
   <div class="filter">
-    <div class="filter__head">
+
+    <div class="filter__title">
       <img src="../assets/image/icon/filter.svg"/>
       <h2>فیلتر</h2>
     </div>
-    <div class="filter__categories">
-      <h4 class="filter__categories--title">دسته بندی ها</h4>
-      <div class="filter__categories--item">
-
-        <span v-for="(category , index) in filter.categories" :key="index">{{ category.title }}</span>
-
+    <div class="filter__content">
+      <div class="filter__content--categories">
+        <h4 class="title">دسته بندی ها</h4>
+        <div class="item">
+          <span v-for="(category , index) in filter.categories" :key="index">{{ category.title }}</span>
+        </div>
       </div>
-    </div>
-    <div class="filter__price">
-      <h4 class="filter__price--title">قیمت ها</h4>
-      <div class="filter__price--item">
-              <span  v-for="(price , index) in filter.prices" :key="index">{{
+      <div class="filter__content--price">
+        <h4 class="title">قیمت ها</h4>
+        <div class="item">
+              <span v-for="(price , index) in filter.prices" :key="index">{{
                   price.price
                 }}</span>
+        </div>
       </div>
     </div>
   </div>
+
 </template>
 <script setup>
 

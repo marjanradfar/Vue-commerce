@@ -1,0 +1,58 @@
+.sort {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  //gap: 2rem;
+  margin-bottom: 40px;
+
+  &__title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__container {
+    display: flex;
+
+    &--selectInput {
+      .selectSort {
+        border: none;
+        width: 120px;
+
+        .SingleSelect__container {
+          padding-right: 1rem;
+
+        }
+      }
+
+    }
+
+    &--display {
+      display: flex;
+
+
+      .displayIcons {
+        display: flex;
+        border: 1px solid $FourthTextColor;
+
+        & > *:not(:last-child) {
+          border-left: 1px solid $FourthTextColor;
+        }
+
+        img {
+          padding: 8px 11px;
+
+        }
+
+        @include break(768) {
+          &:nth-child(-n+2) {
+            display: none;
+          }
+
+        }
+      }
+    }
+
+  }
+}
