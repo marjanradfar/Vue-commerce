@@ -1,5 +1,5 @@
 <template>
-  <section class="support container" :class="sectionStyle">
+  <section class="support container" :class="className">
     <div class="support__item" v-for="(item, index) in data ">
       <div class="support__item--icon">
         <img :src="item.img"/>
@@ -13,6 +13,6 @@
   </section>
 </template>
 <script setup>
-const props = defineProps(["data"]);
+const props = defineProps(["data", "className"]);
 
 </script>

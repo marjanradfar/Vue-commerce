@@ -31,18 +31,25 @@
 }
 
 .swiperCard {
-  margin-right: 8% !important;
-  padding-left: 8% !important;
+  //margin-right: 8% !important;
+  //padding-left: 8% !important;
 
   .swiper-pagination-progressbar {
     background-color: $FourthTextColor;
-    margin-left: 9%;
+    //margin-left: 9%;
   }
 
   .swiper-pagination-progressbar-fill {
     background-color: $mainTextColor !important;
   }
 
+  .swiper-pagination-horizontal {
+    top: 99%;
+  }
+
+  .swiper-wrapper {
+    margin-bottom: 47px;
+  }
 }
 
 //todo:section support
@@ -50,7 +57,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2%;
-  padding: 3rem 0;
+  padding: 52px 0;
   @include break(768) {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
@@ -148,25 +155,25 @@
     margin-bottom: 10%;
   }
 
-  &__head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 2%;
-
-    .extraMediumText {
-      line-height: 60px;
-    }
-
-    @include break(768) {
-      margin-bottom: 5%;
-
-    }
-
-    span {
-      font-weight: 500;
-    }
-  }
+  //&__head {
+  //  display: flex;
+  //  align-items: center;
+  //  justify-content: space-between;
+  //  margin-bottom: 2%;
+  //
+  //  .extraMediumText {
+  //    line-height: 60px;
+  //  }
+  //
+  //  @include break(768) {
+  //    margin-bottom: 5%;
+  //
+  //  }
+  //
+  //  span {
+  //    font-weight: 500;
+  //  }
+  //}
 
   &__item {
     display: grid;

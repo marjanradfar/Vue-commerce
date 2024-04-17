@@ -1,0 +1,19 @@
+.headTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 48px;
+
+  .extraMediumText {
+    line-height: 60px;
+  }
+
+  @include break(768) {
+    margin-bottom: 5%;
+
+  }
+
+  span {
+    font-weight: 500;
+  }
+}

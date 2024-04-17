@@ -37,11 +37,26 @@
           }
         }
 
+        .swiper-button-prev,
+        .swiper-button-next {
+          background-color: $backgroundWhite;
+          width: 52px;
+          height: 52px;
+          border-radius: 999rem;
+          padding: 1%;
+          &::after{
+            display: none;
+          }
+
+
+          img {
+            width: 100%;
+          }        }
+        direction: ltr;
       }
 
       &__thumbnails {
         width: 100%;
-
         .swiper-wrapper {
           justify-content: space-between;
 

@@ -22,6 +22,9 @@
     height: 52px;
     border-radius: 999rem;
     padding: 1%;
+    &::after{
+      display: none;
+    }
     @include break(991) {
       display: none;
     }
@@ -34,7 +37,7 @@
   .swiper-button-next {
 
     &::after{
-      content: url(../../../image/icon/arrow-right.svg)!important;
+      display: none;
     }
   }
 

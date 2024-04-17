@@ -74,10 +74,14 @@
     </section>
 
     <!-- section NewArrivals-->
-    <SwiperCardProgress :dataItems="dataNewArrivals"/>
+    <div class="container newArrivals">
+      <HeadTitle :data="headNewArrivals"/>
+      <SwiperCardProgress :dataItems="dataNewArrivals"/>
 
+    </div>
     <!-- section Support home page-->
     <ContactSupport :data="supportData"/>
+
 
     <!--The price of banners with low prices-->
     <div class="bannerOff">
@@ -104,15 +108,8 @@
 
     <!--section Articles-->
     <section class="articles container">
-      <div class="articles__head">
-        <h1 class="extraMediumText">{{ articles.title }}</h1>
-        <div class="goShop borderButton black">
-          <a href="#">
-            <span class="smallText">{{ articles.moreArticles }}</span>
-            <img :src="articles.iconMoreArticles"/>
-          </a>
-        </div>
-      </div>
+      <HeadTitle :data="headArticles"/>
+
       <div class="articles__item">
         <div class="articles__item--box" v-for="(item , index) in articles.items">
           <div class="boxImg">
@@ -144,6 +141,8 @@ import SingleSwiper from '../components/SingleSwiper.vue';
 import SwiperCardProgress from "../components/SwiperCardProgress.vue";
 import Banner from "@/components/Banner.vue";
 import ContactSupport from "../components/section/ContactSupport.vue";
+import HeadTitle from "@/components/common/HeadTitle.vue";
+
 
 
 //import image
@@ -414,4 +413,17 @@ const supportData = [
     subTitle: "پشتیبانی تلفنی و ایمیلی"
   },
 ]
+
+const headNewArrivals={
+  title:"جدید",
+  subTitle:"ترین ها",
+  textIcon:"محصولات بیشتر",
+  icon:ArrowLeft
+}
+
+const headArticles ={
+  title:"مقالات",
+  textIcon:"مقالات بیشتر",
+  icon:ArrowLeft
+}
 </script>

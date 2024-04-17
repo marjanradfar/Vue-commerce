@@ -31,6 +31,7 @@
 //According to Figma 40px
 .extraMediumText {
   font-size: 3.125em;
+  line-height: 1.5em;
   @include break(768) {
     font-size: 4.5em;
   }

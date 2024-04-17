@@ -12,7 +12,14 @@
         <img :src="slide.img"/>
       </swiper-slide>
 
+      <!--Add navigation buttons-->
+      <div class="swiper-button-prev" @click="prevSlide">
+        <img src="../assets/image/icon/swiper arrow/arrow-left.svg"/>
+      </div>
+      <div class="swiper-button-next" @click="nextSlide">
+        <img src="../assets/image/icon/swiper arrow/arrow-right.svg"/>
 
+      </div>
     </swiper>
     <swiper
         @swiper="setThumbsSwiper"
@@ -26,6 +33,7 @@
       <swiper-slide v-for="(slide, index) in data.thumbs" key="index" class="swiperThumbs__thumbnails--slide">
         <img :src="slide.img" class="item"/>
       </swiper-slide>
+
 
     </swiper>
   </div>
@@ -51,5 +59,15 @@ const setThumbsSwiper = (swiper) => {
 const modules = [FreeMode, Navigation, Thumbs];
 const props = defineProps(["data"]);
 
+
+const prevSlide = () => {
+  const swiper = document.querySelector('.swiperThumbs__Thumbs').swiper;
+  swiper.slidePrev();
+};
+
+const nextSlide = () => {
+  const swiper = document.querySelector('.swiperThumbs__Thumbs').swiper;
+  swiper.slideNext();
+};
 
 </script>

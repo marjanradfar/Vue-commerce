@@ -4,6 +4,7 @@
   display: grid;
   grid-template-columns: 49% 49%;
   gap: 2%;
+  margin-bottom: 48px;
   @include break(768) {
     grid-template-columns:100%;
     align-content: center;
