@@ -54,6 +54,7 @@
   <BannerNewsletter :data="dataNewsletter" className="Newsletter"/>
 </template>
 <script setup>
+import {ref} from 'vue';
 
 //import components
 import Breadcrumbs from "../components/common/Breadcrumbs.vue";
@@ -82,7 +83,6 @@ import thumb2 from "../assets/image/product/TrayTableBeigeRed.png";
 import thumb3 from "../assets/image/product/TrayTableBeigeWhite.png";
 import email from "@/assets/image/icon/email.svg";
 
-//import component
 
 //import data productColor
 
@@ -131,13 +131,12 @@ const dataNewsletter = {
 }
 
 const dataTab = {
-  img: people1,
-  peopleName: "مرجان رادفر",
-  action: [
-    {title: "حدود یک ساعت پیش "},
-    {title: "پسندین "},
-    {title: "پاسخ"},
+  tabs: [
+    {name: 'اطلاعات اضافی', component: 'AdditionalInfo'},
+    {name: 'سوالات', component: 'Questions'},
+    {name: 'بررسی ها', component: 'Reviews'}
   ]
+
 }
 
 const breadcrumbs = [
@@ -147,7 +146,6 @@ const breadcrumbs = [
 ;
 
 
-import {ref} from 'vue';
 
 
 </script>

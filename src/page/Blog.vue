@@ -2,13 +2,24 @@
   <div class="blog">
     <div class="container">
       <Banner :data="dataBannerBlog" className="bannerImg"/>
-      <div class="blog__containerArticle">
-        <Card :data="data" v-for="(data , index) in article" :key="index"/>
-      </div>
+
+      <tabs :options="{ defaultTabHash: 'second-tab' }">
+        <tab id="first-tab" name="تمامی بلاگ ها">
+          <div class="blog__containerArticle">
+            <Card :data="data" v-for="(data , index) in article" :key="index"/>
+          </div>
+        </tab>
+        <tab id="second-tab" name="ویژه">
+          <div class="blog__containerArticle">
+            <Card :data="data" v-for="(data , index) in articleFeacure" :key="index"/>
+          </div>
+        </tab>
+      </tabs>
+
       <Button text="مشاهده بیشتر" className="btnShowMore"/>
     </div>
     <Banner :data="dataNewsletter" className="Newsletter"/>
-    </div>
+  </div>
 </template>
 
 <script setup>
@@ -72,14 +83,27 @@ const article = [
     date: "16 اکتبر 2023"
   },
 ];
+const articleFeacure = [
+  {
+    imgProduct: Bedroom,
+    title: "7 راه برای تزئین خانه خود مانند یک حرفه ای",
+    date: "16 اکتبر 2023"
+  },
+  {
+    imgProduct: Bedroom,
+    title: "7 راه برای تزئین خانه خود مانند یک حرفه ای",
+    date: "16 اکتبر 2023"
+  },
+
+]
 
 const dataBannerBlog = {
   img: Blog,
-  title:"وبلاگ",
-  subTitle:"ایده های خانه و الهام از طراحی",
+  title: "وبلاگ",
+  subTitle: "ایده های خانه و الهام از طراحی",
   breadcrumbs: [
-    { label: 'صفحه اصلی', path: '/' },
-    { label: 'وبلاگ', path: '/blog' },
+    {label: 'صفحه اصلی', path: '/'},
+    {label: 'وبلاگ', path: '/blog'},
   ]
 }
 
@@ -94,6 +118,7 @@ const dataNewsletter = {
   },
   click: "ثبت نام"
 }
+
 
 </script>
 

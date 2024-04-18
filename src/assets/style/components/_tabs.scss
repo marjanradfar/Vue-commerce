@@ -1,0 +1,23 @@
+.tabs-component {
+  &-tabs {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .tabs-component-tab {
+    //padding: 1rem;
+    &-a {
+      //font-size: 1.5rem;
+      color: #807E7E;
+
+      &.is-active {
+        color: $mainTextColor;
+        border-bottom: 1px solid $mainTextColor;
+        font-weight: 600;
+
+      }
+    }
+  }
+}

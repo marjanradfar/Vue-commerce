@@ -1,17 +1,19 @@
 //vue
-import { createApp } from 'vue'
+import {createApp} from 'vue'
 import App from './App.vue'
 import router from "./router";
 //scss
 import './assets/style/main.scss';
 import 'animate.css';
 
+import {Tabs, Tab} from 'vue3-tabs-component';
 
-//
+const app = createApp(App);
 
-
-
-createApp(App).use(router).mount("#app");
+app.use(router);
+app.component('tabs', Tabs)
+app.component('tab', Tab)
+app.mount("#app");
 
 //hamburgerMenu code
 const hamburgerIcon = document.querySelector(".hamburgerIcon");

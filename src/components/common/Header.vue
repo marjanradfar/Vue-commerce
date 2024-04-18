@@ -43,10 +43,10 @@
       <div class="hamburgerMenu__list">
         <nav>
           <ul>
-            <li><a href="#">خانه</a></li>
-            <li><a href="#">فروشگاه</a></li>
-            <li><a href="#">محصولات</a></li>
-            <li><a href="#">درباره ما</a></li>
+            <li><a href="/">خانه</a></li>
+            <li><a href="/shop">فروشگاه</a></li>
+            <li><a href="/product">محصولات</a></li>
+            <li><a href="/blog">درباره ما</a></li>
           </ul>
         </nav>
       </div>
@@ -68,10 +68,10 @@ import logo from '@/assets/image/3legant.svg';
 const headerItems = {
   logo: logo,
   menu: [
-    {url: "#", link: "خانه"},
-    {url: "#", link: "فروشگاه"},
-    {url: "#", link: "محصولات"},
-    {url: "#", link: "درباره ما"},
+    {url: "/", link: "خانه"},
+    {url: "/shop", link: "فروشگاه"},
+    {url: "/product", link: "محصولات"},
+    {url: "blog", link: "درباره ما"},
   ],
   toolbar: [
     {img: search},

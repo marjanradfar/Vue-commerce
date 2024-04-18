@@ -2,7 +2,7 @@
   <div class="tab">
     <div class="tab__item">
       <span
-          v-for="(tab, index) in tabs"
+          v-for="(tab, index) in data.tabs"
           :key="index"
           :class="{ active: currentTab === tab.component }"
           @click="currentTab = tab.component"
@@ -12,8 +12,7 @@
     </div>
     <hr/>
     <div class="tab__info">
-      <component :is="currentTab" ></component>
-
+      <slot></slot>
     </div>
   </div>
 </template>
@@ -25,21 +24,18 @@ import Questions from "../components/section/Questions.vue";
 import Reviews from "../components/section/Reviews.vue";
 
 export default {
+  props: ['data',],
   data() {
     return {
       currentTab: 'AdditionalInfo',
-      tabs: [
-        {name: 'اطلاعات اضافی', component: 'AdditionalInfo'},
-        {name: 'سوالات', component: 'Questions'},
-        {name: 'بررسی ها', component: 'Reviews'}
-      ]
+
     };
   },
   components: {
     AdditionalInfo,
     Questions,
     Reviews
-  }
+  },
 };
 
 
