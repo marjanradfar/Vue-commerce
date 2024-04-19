@@ -3,7 +3,7 @@
     <div class="container">
       <Banner :data="dataBannerBlog" className="bannerImg"/>
 
-      <tabs :options="{ defaultTabHash: 'second-tab' }">
+      <tabs :options="{ defaultTabHash: 'first-tab' }">
         <tab id="first-tab" name="تمامی بلاگ ها">
           <div class="blog__containerArticle">
             <Card :data="data" v-for="(data , index) in article" :key="index"/>

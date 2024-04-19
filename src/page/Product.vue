@@ -48,8 +48,18 @@
         </div>
       </div>
     </div>
-    <Tab :data="dataTab"/>
-
+<!--    <Tab :data="dataTab"/>-->
+    <tabs :options="{ defaultTabHash: 'first-tab' }">
+      <tab id="first-tab" name="اطلاعات اضافی">
+        اطلاعات اضافی
+      </tab>
+      <tab id="second-tab" name="سوالات">
+        سوالات
+      </tab>
+      <tab id="third-tab" name="بررسی ها">
+        <Reviews />
+      </tab>
+    </tabs>
   </div>
   <BannerNewsletter :data="dataNewsletter" className="Newsletter"/>
 </template>
@@ -61,7 +71,6 @@ import Breadcrumbs from "../components/common/Breadcrumbs.vue";
 import MinusPlusInput from "../components/MinusPlusInput.vue";
 import Button from "../components/common/Button.vue";
 import CountdownTimer from "../components/CountdownTimer.vue";
-import Tab from "../components/Tab.vue";
 import BannerNewsletter from "../components/Banner.vue"
 import Thumbs from "../components/SwiperThumbs.vue";
 
@@ -82,6 +91,8 @@ import thumb1 from "../assets/image/product/TrayTableBeige.png";
 import thumb2 from "../assets/image/product/TrayTableBeigeRed.png";
 import thumb3 from "../assets/image/product/TrayTableBeigeWhite.png";
 import email from "@/assets/image/icon/email.svg";
+import Card from "@/components/common/Card.vue";
+import Reviews from "@/components/section/Reviews.vue";
 
 
 //import data productColor
