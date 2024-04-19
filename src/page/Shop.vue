@@ -1,6 +1,8 @@
 <template>
   <div class="shop ">
     <div class="container">
+<!--      <TestDrop />-->
+
       <Banner :data="dataBannerShop" className="bannerImg"/>
       <div class="shop__head">
         <!--                <SingleSelect :data="dataCategories"/>-->
@@ -48,6 +50,7 @@ import Newsletter from "@/assets/image/banner/Newsletter.png";
 import email from "@/assets/image/icon/email.svg";
 import filterIcon from "../assets/image/icon/filter.svg";
 import Tollbar1 from "../assets/image/icon/Toolbar1.svg"
+import TestDrop from "@/components/TestDrop.vue";
 
 
 //import data
