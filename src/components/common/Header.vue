@@ -34,7 +34,7 @@
     </div>
     <div id="hamburgerMenu" class="hamburgerMenu animate__animated animate__fadeInRight ">
       <div class="hamburgerMenu__head ">
-        <img src="../../assets/image/3legant.svg"/>
+        <img src="../../assets/image/3legant.svg"/>1
         <img src="../../assets/image/icon/close.svg" class="closeIcon"/>
       </div>
       <div class="hamburgerMenu__input">

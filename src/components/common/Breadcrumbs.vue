@@ -25,9 +25,6 @@ const props = defineProps(["data"]);
     display: flex;
     align-items: center;
 
-    #left-arrow {
-      display: flex;
-    }
   }
 }
 </style>

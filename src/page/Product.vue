@@ -49,17 +49,17 @@
       </div>
     </div>
 <!--    <Tab :data="dataTab"/>-->
-    <tabs :options="{ defaultTabHash: 'first-tab' }">
-      <tab id="first-tab" name="اطلاعات اضافی">
-        اطلاعات اضافی
-      </tab>
-      <tab id="second-tab" name="سوالات">
-        سوالات
-      </tab>
-      <tab id="third-tab" name="بررسی ها">
-        <Reviews />
-      </tab>
-    </tabs>
+<!--    <tabs :options="{ defaultTabHash: 'first-tab' }">-->
+<!--      <tab id="first-tab" name="اطلاعات اضافی">-->
+<!--        اطلاعات اضافی-->
+<!--      </tab>-->
+<!--      <tab id="second-tab" name="سوالات">-->
+<!--        سوالات-->
+<!--      </tab>-->
+<!--      <tab id="third-tab" name="بررسی ها">-->
+<!--        <Reviews />-->
+<!--      </tab>-->
+<!--    </tabs>-->
   </div>
   <BannerNewsletter :data="dataNewsletter" className="Newsletter"/>
 </template>
@@ -101,16 +101,11 @@ const swiperThumbnails = {
   spaceBetween: 10,
   navigation: true,
   pagination: true,
-  items: [
+  slides: [
     {img: Three},
     {img: Two},
     {img: One},
   ],
-  thumbs: [
-    {img: Three},
-    {img: Two},
-    {img: One},
-  ]
 }
 
 //import data

@@ -12,12 +12,12 @@
       <div class="shop__products">
         <Filter/>
         <div class="shop__products--item">
-          <Sort/>
+<!--          <Sort/>-->
           <div class="itemProducts">
             <div class="itemProducts__container">
               <Card :data="data" v-for="(data , index) in dataShopProducts " :key="index "/>
             </div>
-            <Button text="مشاهده بیشتر" className="btnShowMore"/>
+            <!-- <Button text="مشاهده بیشتر" className="btnShowMore"/> -->
 
           </div>
 
@@ -51,6 +51,7 @@ import email from "@/assets/image/icon/email.svg";
 import filterIcon from "../assets/image/icon/filter.svg";
 import Tollbar1 from "../assets/image/icon/Toolbar1.svg"
 import TestDrop from "@/components/TestDrop.vue";
+import TestSort from "@/components/TestSort.vue";
 
 
 //import data

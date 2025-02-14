@@ -6,9 +6,11 @@
         :navigation="data.navigation"
         :thumbs="{ swiper: thumbsSwiper }"
         :modules="modules"
+        :mousewheel="true"
+
         class="mySwiper2 swiperThumbs__Thumbs"
     >
-      <swiper-slide v-for="(slide, index) in data.items" key="index" class="swiperThumbs__Thumbs--slide">
+      <swiper-slide v-for="(slide, index) in data.slides" :key="index" class="swiperThumbs__Thumbs--slide">
         <img :src="slide.img"/>
       </swiper-slide>
 
@@ -24,13 +26,15 @@
     <swiper
         @swiper="setThumbsSwiper"
         :spaceBetween="10"
-        :slidesPerView="4"
+        :slidesPerView="1"
         :freeMode="true"
         :watchSlidesProgress="true"
         :modules="modules"
+        :mousewheel="true"
+
         class="mySwiper swiperThumbs__thumbnails"
     >
-      <swiper-slide v-for="(slide, index) in data.thumbs" key="index" class="swiperThumbs__thumbnails--slide">
+      <swiper-slide v-for="(slide, index) in data.slides" :key="index" class="swiperThumbs__thumbnails--slide">
         <img :src="slide.img" class="item"/>
       </swiper-slide>
 

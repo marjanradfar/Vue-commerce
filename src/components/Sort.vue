@@ -3,9 +3,7 @@
     <div class="sort__title">
       <h2>همه اتاق ها</h2>
       <!--      <SingleSelect :data="dataSort" className="selectSort"/>-->
-
     </div>
-
     <div class="sort__container">
 
       <div class="sort__container--selectInput">
@@ -24,7 +22,6 @@
 
   </div>
   <Filter v-if="isOpen" class="filterOpen"/>
-
 </template>
 <script setup>
 import filterIcon from "@/assets/image/icon/filter.svg";
@@ -38,6 +35,7 @@ import Filter from "@/components/Filter.vue";
 
 // open component filter
 import {ref} from 'vue';
+import Reviews from "@/components/section/Reviews.vue";
 
 const isOpen = ref(false);
 const toggleFilter = () => {
